@@ -1,0 +1,9 @@
+\begin{thebibliography}{1}
+\input{babelbst.tex}
+\newcommand{\Capitalize}[1]{\uppercase{#1}}
+\newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+
+\bibitem{muster}
+Autor, Journal \textbf{Volume}, Seiten (Jahr).
+
+\end{thebibliography}
