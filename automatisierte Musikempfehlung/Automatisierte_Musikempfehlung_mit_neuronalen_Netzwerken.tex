@@ -1,0 +1,185 @@
+\documentclass[twosided,a4,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage{german}
+\usepackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{pifont}
+\usepackage{nicefrac}
+\usepackage{sectsty}
+
+% ------
+% Fonts and typesetting settings
+\usepackage[sc]{mathpazo}
+\usepackage[T1]{fontenc}
+\linespread{1.1} % Palatino needs more space between lines
+\usepackage{microtype}
+\subsectionfont{\fontsize{10}{15}\selectfont}
+
+% ------
+% Page layout
+\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry}
+\usepackage[font=it]{caption}
+\usepackage{paralist}
+\usepackage{multicol}
+
+% ------
+% Abstract
+\usepackage{abstract}
+	\renewcommand{\abstractnamefont}{\normalfont\bfseries}
+	\renewcommand{\abstracttextfont}{\normalfont\small\itshape}
+
+
+% ------
+% Titling (section/subsection)
+\usepackage{titlesec}
+%\renewcommand\thesection{\Roman{section}}
+\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{}
+
+% ------
+% Clickable URLs (optional)
+\usepackage{hyperref}
+
+% ------
+% Header/footer
+\usepackage{fancyhdr}
+	\pagestyle{fancy}
+%	\fancyhead{}
+%	\fancyfoot[C]{WIS WS 2017/18 $\cdot$
+%          Software Engineering $\cdot$ Prof. Dr. Dünnweber}
+	\fancyhead[C]{OTH Regensburg $\cdot$ Fakultät IM}
+%	\fancyfoot[RO,LE]{\thepage}
+	\fancyfoot[L]{WIS $\cdot$ WS 2017/18}
+	\fancyfoot[R]{Prof. Dr. Dünnweber}
+	\fancyfoot[C]{\thepage}
+
+
+% ------
+% Maketitle metadata
+\title{\vspace{-5mm}%
+	\fontsize{20pt}{10pt}\selectfont
+	\textbf{Automatisierte Musikempfehlung mit Neuronalen Netzwerken}
+	}	
+\vspace{-5mm}\date{}
+\author{
+	\large
+       \begin{minipage}[t]{0.5\linewidth}
+         \begin{center}
+           	\textsc{Weidhas Philipp}\\[2mm]
+                 \normalsize	Matr.nr: 123456\\
+                 \normalsize
+                 \href{mailto:philipp.weidhas@st.oth-regensburg.de}
+                 {philipp.weidhas@st.oth-regensburg.de}      
+         \end{center}
+       \end{minipage}        
+       \begin{minipage}[t]{0.5\linewidth}
+         \begin{center}
+           	\textsc{Wildgruber Markus}\\[2mm]
+                 \normalsize	Matr.nr: 123456\\
+                 \normalsize
+                 \href{mailto:markus.wildgruber@stud.oth-regensburg.de}
+                 {markus.wildgruber@stud.oth-regensburg.de}      
+         \end{center}
+       \end{minipage}
+     }
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\maketitle
+\thispagestyle{fancy}
+
+	
+
+\begin{multicols}{2}
+
+\begin{abstract}
+\noindent Hier kommt die Zusammenfassung...
+\end{abstract}
+
+
+\section{Einleitung}
+
+Man kann auch ganz andere Gerte (Ha, der erste richtige Umlaut auÃŸer
+Esszett!) referenzieren, zum Beispiel die fundamentale Gleichung Nummer
+\ref{Gleichung}.
+\begin{equation}\label{Gleichung}
+\int^{\infty}_{-\infty} e^{-x^{2}}dx = \sqrt{\pi} 
+\end{equation}
+
+Es ist zu beachten, da \LaTeX-Befehle hufig Argumente haben. Diese stehen
+dann in geschweiften Klammern nach dem Befehl. Zum Beispiel wurde "`das
+\texttt{german}-Paket"' mittels "`\verb+das \texttt{german}-Paket+"'
+gesetzt. Deutsche Gchen bekommt man rigens indem man \verb+"`Text"'+
+eingibt. 
+
+\section{Bestehende Ansätze zur Problemlösung}
+
+
+Jetzt wird noch kurz erlutert, wie das Programm
+\textit{MakeIndex}\index{MakeIndex@\textit{MakeIndex}} dazu verwendet werden
+kann, einen Stichwortverzeichnis zu erstellen. Das kann bei grÃ¶ÃŸeren Werken
+fÃ¼r die Leser von nahezu unschtzbarem Wert sein. 
+%%
+Man muÃŸ dazu das Paket
+\texttt{makeidx}\index{makeidx-Paket@\texttt{makeidx}-Paket} einbinden sowie
+den Befehl \verb+\makeindex+ in der Prambel aufrufen. An die Stelle im
+Dokument, wo das Stichwortverzeichnis erscheinen soll, kommt der
+\verb+\printindex+-Befehl. Zum Erzeugen eines Indexeintrages fÃ¼r das Wort
+Indexeintrag\index{Indexeintrag} muÃŸ nur \emph{direkt} hinter dem
+entsprechenden Vorkommen des Wortes der Befehl \verb+\index{Indexeintrag}+
+stehen.
+
+Wenn die \LaTeX-Datei \texttt{mein-text.tex} heiÃŸt, muÃŸ man dann immer drei
+Aufrufe machen:
+\begin{enumerate}
+	\item \texttt{latex mein-text}
+	\item \texttt{makeindex mein-text}
+	\item \texttt{latex mein-text}
+\end{enumerate}
+Wem der Standardtitel "`Index"' nicht behagt, der kann das auch zum Beispiel
+mit einem \verb+\renewcommand{\indexname}{Stichworte}+ den eigenen WÃ¼nschen
+anpassen. 
+
+\subsection{Inhaltsbasierter Filter}
+Und noch etwas Text... \cite{muster}
+
+\subsection{Kontextbasierter Filter
+	Text}
+
+\subsection{Hybrider Ansatz}
+Text
+
+\section{Ansatz mit Hilfe Neuronale Netzwerke}
+Text
+
+\subsection{Funktion Neuronale Netze}
+Text
+
+\subsection{Vergleich verschiedener Ansätze}
+Text
+
+\section{Experiment}
+Text
+
+\subsection{Aufbau}
+Text
+
+\subsection{Ergebnis}
+Text
+
+\section{Vergleich mit Stand der Forschung und Ausblick}
+Text
+
+\bibliographystyle{abbrvdin}
+\bibliography{lit}
+
+\end{multicols}
+
+\end{document}
