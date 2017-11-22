@@ -121,46 +121,17 @@ eingibt.
 
 \section{Bestehende Ansätze zur Problemlösung}
 
-
-Jetzt wird noch kurz erlutert, wie das Programm
-\textit{MakeIndex}\index{MakeIndex@\textit{MakeIndex}} dazu verwendet werden
-kann, einen Stichwortverzeichnis zu erstellen. Das kann bei grÃ¶ÃŸeren Werken
-fÃ¼r die Leser von nahezu unschtzbarem Wert sein. 
-%%
-Man muÃŸ dazu das Paket
-\texttt{makeidx}\index{makeidx-Paket@\texttt{makeidx}-Paket} einbinden sowie
-den Befehl \verb+\makeindex+ in der Prambel aufrufen. An die Stelle im
-Dokument, wo das Stichwortverzeichnis erscheinen soll, kommt der
-\verb+\printindex+-Befehl. Zum Erzeugen eines Indexeintrages fÃ¼r das Wort
-Indexeintrag\index{Indexeintrag} muÃŸ nur \emph{direkt} hinter dem
-entsprechenden Vorkommen des Wortes der Befehl \verb+\index{Indexeintrag}+
-stehen.
-
-Wenn die \LaTeX-Datei \texttt{mein-text.tex} heiÃŸt, muÃŸ man dann immer drei
-Aufrufe machen:
-\begin{enumerate}
-	\item \texttt{latex mein-text}
-	\item \texttt{makeindex mein-text}
-	\item \texttt{latex mein-text}
-\end{enumerate}
-Wem der Standardtitel "`Index"' nicht behagt, der kann das auch zum Beispiel
-mit einem \verb+\renewcommand{\indexname}{Stichworte}+ den eigenen WÃ¼nschen
-anpassen. 
-
 \subsection{Inhaltsbasierter Filter}
-Und noch etwas Text... \cite{muster}
 
-\subsection{Kontextbasierter Filter
-	Text}
+\subsection{Kontextbasierter Filter}
 
 \subsection{Hybrider Ansatz}
 Text
 
-\section{Ansatz mit Hilfe Neuronale Netzwerke}
-Text
+\section{Tiefe Neuronale Netzwerke}
+Nachdem Alex Krizhevsky mit seinem Team den ImageNet ILSVRc-2012 Kontest mit Hilfe eines tiefen Neuronalen Netzwerks (DNN) gewonnen hatte wurden DNNs neben dem Bereich der Bildklassifizierung \cite{alex}, auch in Gesichts- \cite{ding}, Spracherkennung \cite{graves} und der Inhaltsbasierten Musikempfehlung \cite{oord}. \newline Tiefe Neuronale Netzwerke imitieren die Architektur des menschlichen Gehirns \cite{wang}. Dabei können sie verschiedene Funktionen auf drei unterschiedliche Arten lernen. Dem überwachten Lernen (supervised learning) bei dem das DNN eine Eingabe erhält, dessen Ausgabe bekannt ist. Durch das Vergleichen der Netzwerkausgabe mit der Erwarteten, kann dann das DNN dementsprechend konfiguriert werden. Beim Unüberwachten Lernen (unsupervised learning) erhält das DNN verschiedene Eingaben und soll selbständig zusammenhänge zwischen diesen erkennen. Beim bestärkten Lernen (reinforcement learning) befindet sich das DNN in einer ihm unbekannter Umgebung, die es zu erforschen gilt. Gewünschtes Verhalten wird belohnt, wodurch es lernt die richtigen Entscheidungen zu treffen \cite{wang2}. Im folgenden Absatz wird eine Übersicht über den Aufbau und das Training von DNNs dargelegt. Anschließend werden verschiedene Ansätze der Inhaltbasierten Musikempfehlung miteinander verglichen.
 
-\subsection{Funktion Neuronale Netze}
-Text
+\subsection{Aufbau eines tiefen Neuronalen Netzes}
 
 \subsection{Vergleich verschiedener Ansätze}
 Text

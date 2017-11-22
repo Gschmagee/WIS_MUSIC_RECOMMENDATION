@@ -7,11 +7,43 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[1]{muster}
-\textsc{Wang}, X. W.~Y.:
+\bibitem[1]{ding}
+\textsc{Ding}, C.  ; \textsc{Tao}, D. :
+\newblock Robust Face Recognition via Multimodal Deep Face Representation.
+\newblock {In: }\emph{Multimedia, IEEE Transactions on} Volume 17 (2015), S.
+  2049--2058
+
+\bibitem[2]{graves}
+\textsc{Graves}, A.  ; \textsc{Mohamed}, A.-T.   ; \textsc{Hinton}, G.~E.:
+\newblock Speech Recognition with Deep Recurrent Neural Networks.
+\newblock {In: }\emph{Acoustics, Speech and Signal Processing, IEEE
+  International Conference on}  (2013), S. 6645 -- 6649
+
+\bibitem[3]{alex}
+\textsc{Krizhevsky}, A.  ; \textsc{Sutskever}, I.   ; \textsc{Hinton}, G.~E.:
+\newblock ImageNet Classification with Deep Convolutional Neural Networks.
+\newblock {In: }\emph{Advances in neural information processing systems}
+  (2012), S. 1097--1105
+
+\bibitem[4]{oord}
+\textsc{Oord}, A.  van~d. ; \textsc{Dieleman}, S.   ; \textsc{Schrauwen}, B. :
+\newblock Deep content-based music recommendation.
+\newblock {In: }\emph{Advances in Neural Information Processing Systems 26}
+  (2013)
+
+\bibitem[5]{wang}
+\textsc{Wang}, X.  ; \textsc{Wang}, Y. :
 \newblock Improving Content-based and Hybrid Music Recommendation using Deep
   Learning.
 \newblock {In: }\emph{Proceedings of the ACM International Conference on
-  Multimedia} ACM (2014), S. 627--636
+  Multimedia}  (2014), S. 627--636
+
+\bibitem[6]{wang2}
+\textsc{Wang}, X.  ; \textsc{Wang}, Y.  ; \textsc{Hsu}, D.   ; \textsc{Wang},
+  Y. :
+\newblock Exploration in Interactive Personalized Music Recommendation: A
+  Reinforcement Learning Approach.
+\newblock {In: }\emph{ACM Transactions on Multimedia Computing, Communications,
+  and Applications} Volume 11 Issue 1 (2014)
 
 \end{thebibliography}
