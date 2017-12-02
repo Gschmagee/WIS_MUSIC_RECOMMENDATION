@@ -60,6 +60,11 @@ Michael~D. Ekstrandand, John~T. Riedl, and Joseph~A. Konstan.
   4:175--243, 2011.
 
 \bibitem{barrington}
+Robin Burke.
+\newblock Hybrid recommender systems: Survey and experiments.
+\newblock {\em User Model. User-Adapt. Interact}, pages 331--370, 2002.
+
+\bibitem{burke}
 Luke Barrington, Reid Oda, and Gert Lanckriet.
 \newblock Smarter than genius? human evaluation of music recommender systems.
 \newblock {\em Proceedings of the 10th International Society for Music
