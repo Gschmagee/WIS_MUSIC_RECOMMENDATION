@@ -1,4 +1,69 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{friedlander}
+Joshua~P. Friedlander.
+\newblock News and notes on 2017 mid-year riaa revenue statistics.
+\newblock {\em RIAA}, 2017.
+
+\bibitem{rys}
+Dan Rys.
+\newblock {\em U.S. Music Industry's Revenue Growth Accelerates As Paid
+  Streaming Subscriptions Rise 50 Percent}.
+\newblock Billboard, 2017.
+\newblock \url{https://www.billboard.com/articles/business/7972868/
+  us-music-industry-revenue-growth-accelerates-paid-streaming-50-percent}.
+
+\bibitem{oord}
+Aäron van~den Oord, Sander Dieleman, and Benjamin Schrauwen.
+\newblock Deep content-based music recommendation.
+\newblock {\em Advances in Neural Information Processing Systems 26}, 2013.
+
+\bibitem{schedl}
+Markus Schedl, Arthur Flexer, and Julián Urbano.
+\newblock {\em The neglected user in music information retrieval research},
+  volume~36.
+\newblock Springer, 2013.
+
+\bibitem{knees}
+Peter Knees and Markus Schedl.
+\newblock {\em Music Similarity and Retrieval}, volume~41.
+\newblock Springer, 2016.
+
+\bibitem{vigliensoni}
+Gabriel Vigliensoni and Ichiro Fujinaga.
+\newblock Automatic music recommendation systems: Do demographic, proling, and
+  contextual features improve their performance?
+\newblock {\em Proceedings of the 17th International Society for Music
+  Information Retrieval Conference}, pages 94--100, 2016.
+
+\bibitem{kaitila}
+Juuso Kaitila.
+\newblock A content-based music recommender system.
+\newblock Master thesis, University of Tmpere, 2017.
+
+\bibitem{celma}
+Òscar Celma.
+\newblock {\em Music Recommendation and Discovery - The Long Tail, Long Fail,
+  and Long Play in the Digital Music Space}.
+\newblock Springer, 2010.
+
+\bibitem{mcfee}
+B.~McFee, T.~Bertin-Mahieux, D.~P.~W. Ellis, and G.~R.~G. Lanckriet.
+\newblock The million song dataset challenge.
+\newblock {\em 21st International Conference Companion on World Wide Web},
+  pages 909--916, 2012.
+
+\bibitem{ekstrandand}
+Michael~D. Ekstrandand, John~T. Riedl, and Joseph~A. Konstan.
+\newblock Collaborative filtering recommender systems.
+\newblock {\em Foundations and Trends in Human-Computer Interaction},
+  4:175--243, 2011.
+
+\bibitem{barrington}
+Luke Barrington, Reid Oda, and Gert Lanckriet.
+\newblock Smarter than genius? human evaluation of music recommender systems.
+\newblock {\em Proceedings of the 10th International Society for Music
+  Information Retrieval Conference}, pages 357--362, 2009.
 
 \bibitem{alex}
 Alex Krizhevsky, Ilya Sutskever, and Geoffrey~E. Hinton.
@@ -16,11 +81,6 @@ Alex Graves, Abdel-Tahman Mohamed, and Geoffrey~E. Hinton.
 \newblock Speech recognition with deep recurrent neural networks.
 \newblock {\em Acoustics, Speech and Signal Processing, IEEE International
   Conference on}, pages 6645 -- 6649, 2013.
-
-\bibitem{oord}
-Aäron van~den Oord, Sander Dieleman, and Benjamin Schrauwen.
-\newblock Deep content-based music recommendation.
-\newblock {\em Advances in Neural Information Processing Systems 26}, 2013.
 
 \bibitem{wang2}
 Xinixi Wang, Ye~Wang, David Hsu, and Ye~Wang.
@@ -48,8 +108,7 @@ Jonas Knupp.
 
 \bibitem{zhou}
 Zhou Y. and Chellappa R.
-\newblock Computation of optical flow using a neural network. in neural
-  networks,.
+\newblock Computation of optical flow using a neural network.
 \newblock {\em IEEE International Conference}, 71–78, 1988.
 
 \end{thebibliography}

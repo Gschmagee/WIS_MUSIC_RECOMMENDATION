@@ -48,6 +48,7 @@
 
 % ------
 % Clickable URLs (optional)
+\usepackage[hyphens]{url}
 \usepackage{hyperref}
 
 % ------
@@ -57,7 +58,7 @@
 %	\fancyhead{}
 %	\fancyfoot[C]{WIS WS 2017/18 $\cdot$
 %          Software Engineering $\cdot$ Prof. Dr. Dünnweber}
-	\fancyhead[C]{OTH Regensburg $\cdot$ Fakultät IM}
+	\fancyhead[R]{OTH Regensburg $\cdot$ Fakultät IM}
 %	\fancyfoot[RO,LE]{\thepage}
 	\fancyfoot[L]{WIS $\cdot$ WS 2017/18}
 	\fancyfoot[R]{Prof. Dr. Dünnweber}
@@ -72,17 +73,16 @@
 	}	
 \vspace{-5mm}\date{}
 \author{
-	\large
-       \begin{minipage}[t]{0.5\linewidth}
-         \begin{center}
-           	\textsc{Weidhas Philipp}\\[2mm]
-                 \normalsize	Matr.nr: 123456\\
-                 \normalsize
-                 \href{mailto:philipp.weidhas@st.oth-regensburg.de}
-                 {philipp.weidhas@st.oth-regensburg.de}      
-         \end{center}
-       \end{minipage}        
-       \begin{minipage}[t]{0.5\linewidth}
+	\large\begin{minipage}[t]{0.5\linewidth}
+		\begin{center}
+			\textsc{Weidhas Philipp}\\[2mm]
+			\normalsize	Matr.nr: 123456\\
+			\normalsize
+			\href{mailto:philipp.weidhas@st.oth-regensburg.de}
+			{philipp.weidhas@st.oth-regensburg.de}      
+		\end{center}
+	\end{minipage}        
+	\begin{minipage}[t]{0.5\linewidth}
          \begin{center}
            	\textsc{Wildgruber Markus}\\[2mm]
                  \normalsize	Matr.nr: 123456\\
@@ -112,34 +112,52 @@
 
 
 \section{Einleitung}
+Im ersten Halbjahr des Jahres 2017 wurden 62\% der Einnahmen der Amerikanischen Musikindustrie durch Streaming Plattformen (wie Spotify, Apple Music, Pandora etc.) erzielt. Im Vergleich zu Vorjahr erhöhten sich dadurch die Einnahmen um 48\% auf 2.5\$ Milliarde \cite{friedlander}\cite{rys}. Es zeigt sich, dass automatisierte Empfehlungssysteme weit verbreitet sind.\newline
+Obwohl diese in den letzten Jahren viel erforscht wurden, existieren noch Probleme, die bislang zu wenig in Musikempfehlungssystemen berücksichtigt wurden. Neben der Schwierigkeit der große Anzahl an verschiedenen Stile und Genres, beeinflussen sowohl soziales - und geographisches Umfeld, sowie der aktuelle Gemütszustandes die Vorliebe eines Hörers. \cite{oord}\newline\\
+Nach Schedl \cite{schedl} gibt es in der Musik Information Retrieval(MIR) vier Kategorien die einen Einfluß auf die Wahrnehmung von ähnlicher Musik haben. Musikinhalt bezieht sich auf alles, dass aus dem Signal selbst herausgefiltert werden kann. Dazu zählen Aspekte wie der Rhythmus, die Melodie, die Harmonie oder die Stimmung eines Stücks.\cite{knees}\newline
+Als Musikkontext versteht man alle Aspekte, die nicht aus dem Audiosignal abgeleitet werden, sondern Informationen die über ein Musikstück bekannt sind. Die sogenannten Metadaten wie der Titel eines Lieds, das Genre, Name des Künstlers oder das Erscheinungsjahr \cite{knees}.\newline
+Die Benutzereigenschaften beziehen sie auf Persönlichkeitsmerkmale, wie Geschmack, musikalisches Wissen und Erfahrung oder den demographischen Hintergrund \cite{knees}.\newline
+Im Unterschied dazu steht der Benutzerkontext, der sich auf die aktuelle Situation des Hörers bezieht. Dabei wird er durch seine Umgebung, seiner Stimmung oder der aktuellen Aktivität beeinflußt \cite{knees}.\newline
+Bislang werden Informationen über den Hörer durch ein Benutzerprofil repräsentiert. Das Profil enthält oftmals nur wenig Hintergrund Informationen des Hörers und beschränkt sich auf Lieder, die ein Benutzer angehört und bewertet hat \cite{oord}. Das Nutzen dieser Daten um Musikvorschläge zu machen wird als Kollaboratives Filtern (CF) bezeichnet. In der Studie von Vigliensoni und Fujinaga \cite{vigliensoni} zeigt sich ein deutlicher Unterschied zwischen herkömmlichen Benutzerprofilen und das Einfügen von Zusatzinformationen. Durch das Hinzufügen der Feature demographischen Hintergrund und Entdeckergeist des Hörers konnte im Vergleich zu einem herkömmlichen Profil eine 12\% besser Genauigkeit erreicht werden.\newline\\
+Der weiter Verlauf der wissenschaftlichen Arbeit ist wie folgt organisiert. Im 2. Abschnitt werden verschieden historische Ansätze in den jeweiligen Methodenbereichen vorgestellt. Im 3. Kapitel werden die erfolgreichsten Ansätze miteinander verglichen. Teil 4 zeigt ein eigenes Experiment zu dem Thema. Abschnitt 5 schließt dieses Arbeit ab und diskutiert zukünftige Forschungsrichtungen.
 
-\section{Bestehende Ansätze zur Problemlösung}
+\section{Methoden zur Musikempfehlung}
+Es gibt vier verschiedene Methoden, die in Musikempfehlungssystemen verwendet werden: kollaboratives -, inhaltsbasierte -, kontext-basiertes Filtern und die hybride Methode \cite{kaitila}.
+\subsection{Kollaboratives Filtern}
+Kollaboratives Filtern prognostiziert Vorlieben eines Hörers, indem es aus unterschiedlichen Benutzer-Lied Verhältnissen lernt. Es basiert auf der Annahme, dass Verhalten und Bewertungen andere Nutzer auf eine vernünftige Vorhersage für den aktiven Benutzer schließen lassen \cite{celma}. Durch explizite oder implizite Rückmeldung an das Empfehlungssystem empfiehlt dieses neue Lieder, indem es Gemeinsamkeiten auf Basis der Bewertungen vergleicht \cite{mcfee}.\newline
+Eine Vorhersage, ob ein Lied einem Benutzer vorgeschlagen werden soll, kann auf zwei verschiedene Arten erfolgen. In der ersten Methode werden Ähnlichkeiten von Bewertungsmustern verglichen. Lieder werden als ähnlich erachtet wenn sie von den selben Benutzern positiv bewertet wurden. Die zweite Methode berechnet ihre Vorhersage in dem sie ähnliche Profile zu einem Bestimmten sucht und deren Positiv bewerteten Lieder als Vorschlag benutzt. \cite{ekstrandand}\newline
+Verschiedene Studien (\cite{mcfee}\cite{barrington}) zeigen das CF alternative Methoden in der Genauigkeit übertrifft, weshalb es nicht nur im Bereich der Musikempfehlung als die Erfolgreichste gilt.\newline
+Trotz der Popularität des CF gibt Probleme die bei der Verwendung der Methode beachtet werden müssen. Beim Cold-Start Problem liegen noch keine Bewertungen für ein Lied vor, wodurch es auch nicht vorgeschlagen werden kann. Das selbe Problem gibt es bei einem neuen Benutzer, diesem kann keine guter Vorschlag gemacht werden, da es an Information mangelt welche Art von Musik ihm gefällt. \cite{celma} Neben dem Cold-Start Problem gibt es noch weitere Probleme die in \cite{celma} aufgeführt werden.
 
 \subsection{Inhaltsbasierter Filter}
 
-\subsection{Kontextbasierter Filter}
+\subsection{Kontext-basierter Filter}
 
-\subsection{Hybrider Ansatz}
+\subsection{Hybrider Methode}
+
+\section{Bestehende Ansätze zur Problemlösung}
+
+
 
 \section{Convolutional Neuronale Netzwerke}
-Nachdem Alex Krizhevsky mit seinem Team den ImageNet ILSVRc-2012 Kontest mit Hilfe eines tiefen Neuronalen Netzwerks (DNN) gewann. Wurden DNNs auch in anderen Bereichen neben der Bildklassifizierung \cite{alex}  in Gesichtserkennung \cite{ding}, Spracherkennung \cite{graves} und der Inhaltsbasierten Musikempfehlung \cite{oord} mehr genutzt und erforscht.\newline
-Um diese unterschiedliche Funktionalität zu lernen, werden DNN mit drei verschiedenen Arten trainiert. Dem überwachten Lernen (supervised learning) bei dem das DNN eine Eingabe erhält, dessen Ausgabe bekannt ist. Durch das Vergleichen der Netzwerkausgabe mit der Erwarteten, kann das DNN dementsprechend konfiguriert werden. Beim Unüberwachten Lernen (unsupervised learning) erhält das DNN verschiedene Eingaben und soll selbständig zusammenhänge zwischen diesen erkennen. Beim bestärkten Lernen (reinforcement learning) befindet sich das DNN in einer ihm unbekannter Umgebung, die es zu erforschen gilt. Gewünschtes Verhalten wird belohnt, wodurch es lernt die richtigen Entscheidungen zu treffen \cite{wang2}.\newline 
-Vorallem in den letzen Jahren hat sich das Convolutional Neuronales Netzwerk (CNN) als das erfolgsversprechendste DNN erwiesen.\newline 
-Im folgenden Absatz wird eine Übersicht über den Aufbau, das Training und die Besonderheiten eines CNNs dargelegt. Anschließend werden verschiedene Ansätze der Inhaltbasierten Musikempfehlung miteinander verglichen.
+Nachdem Alex Krizhevsky mit seinem Team den ImageNet ILSVRc-2012 Contest mit Hilfe eines tiefen Neuronalen Netzwerks (DNN) gewann. Wurden DNNs auch in anderen Bereichen neben der Bildklassifizierung \cite{alex} in Gesichtserkennung \cite{ding}, Spracherkennung \cite{graves} und der Inhaltsbasierten Musikempfehlung \cite{oord} mehr genutzt und erforscht.\newline
+Um diese unterschiedliche Funktionalität zu lernen, werden DNN mit drei verschiedenen Arten trainiert. Dem überwachten Lernen (supervised learning) bei dem das DNN eine Eingabe erhält, dessen Ausgabe bekannt ist. Durch das Vergleichen der Netzwerkausgabe mit der Erwarteten, kann das DNN dementsprechend konfiguriert werden. Beim Unbewachten Lernen (unsupervised learning) erhält das DNN verschiedene Eingaben und soll selbständig zusammenhänge zwischen diesen erkennen. Beim bestärkten Lernen (reinforcement learning) befindet sich das DNN in einer ihm unbekannter Umgebung, die es zu erforschen gilt. Gewünschtes Verhalten wird belohnt, wodurch es lernt die richtigen Entscheidungen zu treffen \cite{wang2}.\newline 
+Vor allem in den letzten Jahren hat sich das Convolutional Neuronales Netzwerk (CNN) als das erfolgversprechendste DNN erwiesen.\newline 
+Im folgenden Absatz wird eine Übersicht über den Aufbau, das Training und die Besonderheiten eines CNNs dargelegt. Anschließend werden verschiedene Ansätze der Inhaltsbasierten Musikempfehlung miteinander verglichen.
 
 \subsection{Aufbau eines Convolutional Neuronalen Netzes}
-Im Unterschied zu reglären DNN verwedet das CNN Neuronen, die drei Dimensionale angeordnete sind. Durch diese Anordnung ist es möglich größere Inputdaten in der selben Geschwindigkeit zu verarbeiten wie zuvor \cite{karpathy}. Um eine CNN Architektur zu erstellen werden drei Haupttypen von Schichten verwendet: Faltungs- (convolutional layer), Vereinigungs- (pooling layer) und einer vollständig verbundenen Schicht (fully-connected layer).
+Im Unterschied zu regulären DNN verwendet das CNN Neuronen, die drei Dimensionale angeordnete sind. Durch diese Anordnung ist es möglich größere Inputdaten in der selben Geschwindigkeit zu verarbeiten wie zuvor \cite{karpathy}. Um eine CNN Architektur zu erstellen werden drei Haupttypen von Schichten verwendet: Faltungs- (convolutional layer), Vereinigungs- (pooling layer) und einer vollständig verbundenen Schicht (fully-connected layer).
 
 \subsubsection*{Faltungsschicht}
 Jede Faltungsschicht besteht aus einem oder mehreren lernfähigen Filtern. Jeder dieser Filter ist räumlich kleiner (Höhe und Breite) aber erstreck sich über die selbe Tiefe der Eingangsmatrix. Durch die Iteration über jeden Punkt in der Eingabematrix erstellt die Faltungsschicht eine zweidimensionale Aktivierungskarte. Anhand dieser erkennt die Schicht dann gewünschte Merkmale wieder \cite{karpathy}.\newline
-Sei die Eingabematrix I eine 7x7x3 Matrix und K ein 3x3x3 Filter. So wird in der Ausgabematrix S die Stelle (i,j) durch die Gleichung (\ref{faltung1})  berechnet. Eine genauere Herleitung der Gleichung findet der Leser u. a. bei Goodfellow \cite{goodfellow}(328f). Die Faltung wird in Abbildung \ref{img:faltung} dargestellt.
+Sei die Eingabematrix I eine 7x7x3 Matrix und K ein 3x3x3 Filter. So wird in der Ausgabematrix S die Stelle (i,j) durch die Gleichung (\ref{faltung1}) berechnet. Eine genauere Herleitung der Gleichung findet der Leser u. a. bei Goodfellow \cite{goodfellow}(328f). Die Faltung wird in Abbildung \ref{img:faltung} dargestellt.
 \begin{equation}\label{faltung1}
-S(i,j) =(I*K)(i,j)
+S(i,j) =(I \ast K)(i,j)
 \end{equation}
 \begin{equation}\label{faltung2}
-(I*K)(i,j) =\newline\sum_{m}^{}\sum_{n}^{}I(i+m,j+n)K(m,n)
+(I \ast K)(i,j) =\newline\sum_{m}^{}\sum_{n}^{}I(i+m,j+n)K(m,n)
 \end{equation}
-Gleichung (\ref{faltung2}) zeigt eigentlich Cross-Correlation wird aber oft auch als Faltung bezeichent \cite{goodfellow}(328)\\
+Gleichung (\ref{faltung2}) zeigt eigentlich Cross-Correlation wird aber oft auch als Faltung bezeichnet \cite{goodfellow}(328)\\
 \\
 \begin{minipage}{0.45\textwidth}
 	\centering
@@ -149,10 +167,10 @@ Gleichung (\ref{faltung2}) zeigt eigentlich Cross-Correlation wird aber oft auch
 \end{minipage}
 
 \subsubsection*{Verbindungsschicht}
-Üblicherweise wird eine Verbindungsschicht zwischen zwei Faltungschichten eingefügt. Seine Funktionbesteht darin, schrittweise die Größe der Darstellung zu reduzieren, um die Anzahl der Parameter und dadurch die Berechnung des gesammt Netwerkes zu verringern \cite{karpathy}. Sie ersetzt die Ausgabe eines Netzes an einem bestimmten Punkt durch eine statistische Zusammenfassung der nahegelegenen Ausgängen. Zum Beispiel Max Pooling \cite{zhou} Übergabe der größte Zahl in einem rechteckigen Umfeld, Durchschnittsberechnung des Umfeldes oder ein gewichteter Durschnitt basierend auf die Entfernung eines zentralen Punktes \cite{goodfellow}(355).
+Üblicherweise wird eine Verbindungsschicht zwischen zwei Faltungsschichten eingefügt. Seine Funktion besteht darin, schrittweise die Größe der Darstellung zu reduzieren, um die Anzahl der Parameter und dadurch die Berechnung des gesamt Netzwerkes zu verringern \cite{karpathy}. Sie ersetzt die Ausgabe eines Netzes an einem bestimmten Punkt durch eine statistische Zusammenfassung der nahegelegenen Ausgängen. Zum Beispiel Max Pooling \cite{zhou} Übergabe der größte Zahl in einem rechteckigen Umfeld, Durchschnittsberechnung des Umfeldes oder ein gewichteter Durchschnitt basierend auf die Entfernung eines zentralen Punktes \cite{goodfellow}(355).
 
 \subsubsection*{Vollständig verbundenen Schicht}
-Neuronen in einer vollständig verbundenen Schicht haben Verbindungen zu allen Knoten der vorherigen Schicht. Ihre Aktivierung wird durch eine Matrixmultipliklation und einem Bias-Offset berechnet \cite{karpathy}. Die vollständig verbundenen Schicht wird als Ausgabeschicht verwendet um aus der Eingangsmatrix einen Vektor zu erzeugen.
+Neuronen in einer vollständig verbundenen Schicht haben Verbindungen zu allen Knoten der vorherigen Schicht. Ihre Aktivierung wird durch eine Matrixmultiplikation und einem Bias-Offset berechnet \cite{karpathy}. Die vollständig verbundenen Schicht wird als Ausgabeschicht verwendet um aus der Eingangsmatrix einen Vektor zu erzeugen.
 
 \subsubsection*{Training}
 

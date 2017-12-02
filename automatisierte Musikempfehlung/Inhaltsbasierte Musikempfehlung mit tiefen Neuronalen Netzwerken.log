@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.23)  23 NOV 2017 17:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.23)  1 DEC 2017 09:59
 entering extended mode
 **"./Inhaltsbasierte Musikempfehlung mit tiefen Neuronalen Netzwerken.tex"
 ("Inhaltsbasierte Musikempfehlung mit tiefen Neuronalen Netzwerken.tex"
@@ -808,6 +808,10 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 (D:\Programme\MiKTeX\tex\latex\titlesec\block.tss
 File: block.tss 2016/03/15
 )
+(D:\Programme\MiKTeX\tex\latex\url\url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
 (D:\Programme\MiKTeX\tex\latex\hyperref\hyperref.sty
 Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
 
@@ -882,11 +886,6 @@ Package hyperref Info: Backreferencing OFF on input line 4518.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4751.
 \c@Hy@tempcnt=\count120
-
-(D:\Programme\MiKTeX\tex\latex\url\url.sty
-\Urlmuskip=\muskip11
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
 LaTeX Info: Redefining \url on input line 5104.
 \XeTeXLinkMargin=\dimen146
 \Fld@menulength=\count121
@@ -1133,50 +1132,61 @@ Overfull \hbox (15.49199pt too wide) in paragraph at lines 103--103
 
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <10> not available
 (Font)              Font shape `T1/pplx/b/n' tried instead on input line 109.
-LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <12> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 118.
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--123
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--123
+
+ []
+
 LaTeX Font Info:    Font shape `T1/pplx/m/sl' in size <10> not available
-(Font)              Font shape `T1/pplx/m/it' tried instead on input line 136.
+(Font)              Font shape `T1/pplx/m/it' tried instead on input line 126.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 136.
+(Font)              scaled to size 10.42007pt on input line 126.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 136.
+(Font)              scaled to size 7.91925pt on input line 126.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 136.
+(Font)              scaled to size 6.25204pt on input line 126.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 136.
+(Font)              scaled to size 10.42007pt on input line 126.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 136.
+(Font)              scaled to size 7.91925pt on input line 126.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 136.
+(Font)              scaled to size 6.25204pt on input line 126.
 [1{C:/Users/Markus/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 ]
-<img/faltung-klein.png, id=81, 150.5625pt x 126.4725pt>
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <12> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 126.
+ [2]
+<img/faltung-klein.png, id=120, 150.5625pt x 126.4725pt>
 File: img/faltung-klein.png Graphic file (type png)
 
 <use img/faltung-klein.png>
-Package pdftex.def Info: img/faltung-klein.png used on input line 146.
+Package pdftex.def Info: img/faltung-klein.png used on input line 164.
 (pdftex.def)             Requested size: 150.56212pt x 126.47218pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 147.
+(caption)                particular \caption on input line 165.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--150
+Underfull \hbox (badness 10000) in paragraph at lines 159--168
 \T1/pplx/m/n/10 (+20) Gleichung ([]2[]) zeigt ei-gent-lich Cross-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--150
+Underfull \hbox (badness 10000) in paragraph at lines 159--168
 
  []
 
 ("Inhaltsbasierte Musikempfehlung mit tiefen Neuronalen Netzwerken.bbl"
-[2 <./img/faltung-klein.png>]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 36.
+[3 <./img/faltung-klein.png>]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 14.
  (D:\Programme\MiKTeX\tex\latex\base\t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
@@ -1184,30 +1194,45 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-)
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--15
+[]$\T1/cmtt/m/n/10 https : / / www . billboard . com / articles /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--15
+\T1/cmtt/m/n/10 business / 7972868 / us -[] music -[] industry -[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--15
+\T1/cmtt/m/n/10 revenue -[] growth -[] accelerates -[] paid -[]
+ []
+
+[4])
 
 Package caption Warning: Unused \captionsetup[faltung] on input line 34.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 175.
-[3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 175.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 193.
+[5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 193.
  ("Inhaltsbasierte Musikempfehlung mit tiefen Neuronalen Netzwerken.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 175.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 175.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 193.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 193.
 Package rerunfilecheck Info: File `"Inhaltsbasierte Musikempfehlung mit tiefen 
 Neuronalen Netzwerken".out' has not changed.
-(rerunfilecheck)             Checksum: 3AF7B97D3AEF9AAA089C26FEB262634E;827.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 175.
+(rerunfilecheck)             Checksum: DAD5438CE4DC6C8CBE3EE2F22A9E1A2A;967.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 193.
  ) 
 Here is how much of TeX's memory you used:
- 12056 strings out of 493323
- 177457 string characters out of 3142536
- 313735 words of memory out of 3000000
- 15150 multiletter control sequences out of 15000+200000
- 57902 words of font info for 223 fonts, out of 3000000 for 9000
+ 12136 strings out of 493323
+ 178203 string characters out of 3142536
+ 315034 words of memory out of 3000000
+ 15162 multiletter control sequences out of 15000+200000
+ 60855 words of font info for 264 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,14n,43p,822b,702s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,14n,43p,833b,716s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Markus\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
 \ectt1000.pk>{D:/Programme/MiKTeX/fonts/enc/dvips/base/8r.enc}<D:/Programme/MiK
 TeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Programme/MiKTeX/fonts/type1/p
@@ -1217,9 +1242,9 @@ MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><D:/Programme/MiKTeX/fonts/type1/urw
 /palatino/uplr8a.pfb><D:/Programme/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
 
 Output written on "Inhaltsbasierte Musikempfehlung mit tiefen Neuronalen Netzwe
-rken.pdf" (3 pages, 143812 bytes).
+rken.pdf" (5 pages, 164163 bytes).
 PDF statistics:
- 169 PDF objects out of 1000 (max. 8388607)
- 28 named destinations out of 1000 (max. 500000)
- 44646 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 231 PDF objects out of 1000 (max. 8388607)
+ 42 named destinations out of 1000 (max. 500000)
+ 44662 words of extra memory for PDF output out of 51595 (max. 10000000)
 
