@@ -1,0 +1,12 @@
+\BOOKMARK [1][-]{section.1}{Einleitung}{}% 1
+\BOOKMARK [1][-]{section.2}{Bestehende Ans\344tze zur Probleml\366sung}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Inhaltsbasierter Filter}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Kontextbasierter Filter}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Hybrider Ansatz}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Convolutional Neuronale Netzwerke}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{Aufbau eines Convolutional Neuronalen Netzes}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.2}{Vergleich verschiedener Ans\344tze}{section.3}% 8
+\BOOKMARK [1][-]{section.4}{Experiment}{}% 9
+\BOOKMARK [2][-]{subsection.4.1}{Aufbau}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.2}{Ergebnis}{section.4}% 11
+\BOOKMARK [1][-]{section.5}{Vergleich mit Stand der Forschung und Ausblick}{}% 12
