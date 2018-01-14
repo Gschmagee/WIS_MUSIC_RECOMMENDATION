@@ -1,17 +1,16 @@
 \BOOKMARK [1][-]{section.1}{Einleitung}{}% 1
-\BOOKMARK [1][-]{section.2}{Methoden zur Musikempfehlung}{}% 2
+\BOOKMARK [1][-]{section.2}{Grundlagen der Musikempfehlung}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{Kollaborativer Filter}{section.2}% 3
 \BOOKMARK [2][-]{subsection.2.2}{Merkmalsbasierter Filter}{section.2}% 4
 \BOOKMARK [2][-]{subsection.2.3}{Kontextbasierter Filter}{section.2}% 5
 \BOOKMARK [2][-]{subsection.2.4}{Hybride Methode}{section.2}% 6
-\BOOKMARK [1][-]{section.3}{CNN f\374r Audiosignale}{}% 7
+\BOOKMARK [1][-]{section.3}{Neuronale Netzen in der MIR}{}% 7
 \BOOKMARK [2][-]{subsection.3.1}{Convolutional Neuronalen Netze}{section.3}% 8
 \BOOKMARK [3][-]{subsubsection.3.1.1}{Schichten eines Convolutional Neuronalen Netzwerks}{subsection.3.1}% 9
 \BOOKMARK [3][-]{subsubsection.3.1.2}{Training}{subsection.3.1}% 10
 \BOOKMARK [3][-]{subsubsection.3.1.3}{Optimierung}{subsection.3.1}% 11
-\BOOKMARK [2][-]{subsection.3.2}{}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.2}{Musikempfehlung mit Neuronalen Netzwerken}{section.3}% 12
 \BOOKMARK [2][-]{subsection.3.3}{Hybride Musikempfehlung mit einem Neuronalen Netzwerk}{section.3}% 13
 \BOOKMARK [3][-]{subsubsection.3.3.1}{Hierarchisches lineares Modell mit einem Deep Belief Netzwerk}{subsection.3.3}% 14
 \BOOKMARK [3][-]{subsubsection.3.3.2}{Hybrides Modell mit einem Deep Belief Netzwerk}{subsection.3.3}% 15
-\BOOKMARK [1][-]{section.4}{Vergleich mit Stand der Forschung}{}% 16
-\BOOKMARK [1][-]{section.5}{Diskussion der zuk\374nftigen Forschungstrends}{}% 17
+\BOOKMARK [1][-]{section.4}{Vergleich der vorgestellten Modelle}{}% 16
