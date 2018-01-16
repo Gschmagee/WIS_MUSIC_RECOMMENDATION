@@ -7,10 +7,9 @@
 \BOOKMARK [1][-]{section.3}{Neuronale Netzen in der MIR}{}% 7
 \BOOKMARK [2][-]{subsection.3.1}{Convolutional Neuronalen Netze}{section.3}% 8
 \BOOKMARK [3][-]{subsubsection.3.1.1}{Schichten eines Convolutional Neuronalen Netzwerks}{subsection.3.1}% 9
-\BOOKMARK [3][-]{subsubsection.3.1.2}{Training}{subsection.3.1}% 10
-\BOOKMARK [3][-]{subsubsection.3.1.3}{Optimierung}{subsection.3.1}% 11
-\BOOKMARK [2][-]{subsection.3.2}{Musikempfehlung mit Neuronalen Netzwerken}{section.3}% 12
-\BOOKMARK [2][-]{subsection.3.3}{Hybride Musikempfehlung mit einem Neuronalen Netzwerk}{section.3}% 13
-\BOOKMARK [3][-]{subsubsection.3.3.1}{Hierarchisches lineares Modell mit einem Deep Belief Netzwerk}{subsection.3.3}% 14
-\BOOKMARK [3][-]{subsubsection.3.3.2}{Hybrides Modell mit einem Deep Belief Netzwerk}{subsection.3.3}% 15
-\BOOKMARK [1][-]{section.4}{Vergleich der vorgestellten Modelle}{}% 16
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Supervised Training}{subsection.3.1}% 10
+\BOOKMARK [2][-]{subsection.3.2}{Musikempfehlung mit Neuronalen Netzwerken}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.3}{Hybride Musikempfehlung mit einem Neuronalen Netzwerk}{section.3}% 12
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Hierarchisches lineares Modell mit einem Deep Belief Netzwerk}{subsection.3.3}% 13
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Hybrides Modell mit einem Deep Belief Netzwerk}{subsection.3.3}% 14
+\BOOKMARK [1][-]{section.4}{Vergleich der vorgestellten Modelle}{}% 15
