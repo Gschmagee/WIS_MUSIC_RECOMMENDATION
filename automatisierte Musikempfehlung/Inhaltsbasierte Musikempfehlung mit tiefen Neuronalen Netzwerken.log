@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.16)  16 JAN 2018 16:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.16)  17 JAN 2018 21:05
 entering extended mode
 **"./Inhaltsbasierte Musikempfehlung mit tiefen Neuronalen Netzwerken.tex"
 ("Inhaltsbasierte Musikempfehlung mit tiefen Neuronalen Netzwerken.tex"
@@ -792,13 +792,16 @@ Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
 \colbreak@box=\box56
 \mc@col@check@num=\count114
 )
-(C:\Users\Markus\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\newfloat.sty
-Package: newfloat 2015/09/17 v1.1-109 Defining new floating environments (AR)
+(C:\Users\Markus\AppData\Roaming\MiKTeX\2.9\tex\latex\mdwtools\footnote.sty
+Package: footnote 1997/01/28 1.13 Save footnotes around boxes
+\fn@notes=\box57
+\fn@width=\dimen146
 )
-Package newfloat Info: New float `faltung' with options `' on input line 36.
-\c@faltung=\count115
-\newfloat@ftype=\count116
-Package newfloat Info: float type `faltung'=8 on input line 36.
+(C:\Users\Markus\AppData\Roaming\MiKTeX\2.9\tex\latex\bigfoot\perpage.sty
+Package: perpage 2014/10/25 2.0 Reset/sort counters per page
+\c@abspage=\count115
+)
+\c@pp@a@footnote=\count116
 
 (C:\Users\Markus\AppData\Roaming\MiKTeX\2.9\tex\latex\abstract\abstract.sty
 Package: abstract 2009/06/08 v1.2a configurable abstracts
@@ -810,15 +813,15 @@ Package: abstract 2009/06/08 v1.2a configurable abstracts
 )
 (C:\Users\Markus\AppData\Roaming\MiKTeX\2.9\tex\latex\titlesec\titlesec.sty
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
-\ttl@box=\box57
+\ttl@box=\box58
 \beforetitleunit=\skip61
 \aftertitleunit=\skip62
-\ttl@plus=\dimen146
-\ttl@minus=\dimen147
+\ttl@plus=\dimen147
+\ttl@minus=\dimen148
 \ttl@toksa=\toks28
-\titlewidth=\dimen148
-\titlewidthlast=\dimen149
-\titlewidthfirst=\dimen150
+\titlewidth=\dimen149
+\titlewidthlast=\dimen150
+\titlewidthfirst=\dimen151
 )
 (C:\Users\Markus\AppData\Roaming\MiKTeX\2.9\tex\latex\titlesec\block.tss
 File: block.tss 2016/03/15
@@ -883,7 +886,7 @@ Package auxhook Warning: Cannot patch \document,
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen151
+\@linkdim=\dimen152
 \Hy@linkcounter=\count117
 \Hy@pagecounter=\count118
 
@@ -906,10 +909,10 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4751.
 \c@Hy@tempcnt=\count120
 LaTeX Info: Redefining \url on input line 5104.
-\XeTeXLinkMargin=\dimen152
+\XeTeXLinkMargin=\dimen153
 \Fld@menulength=\count121
-\Field@Width=\dimen153
-\Fld@charsize=\dimen154
+\Field@Width=\dimen154
+\Fld@charsize=\dimen155
 Package hyperref Info: Hyper figures OFF on input line 6358.
 Package hyperref Info: Link nesting OFF on input line 6363.
 Package hyperref Info: Hyper index ON on input line 6366.
@@ -959,29 +962,29 @@ LaTeX Warning: Unused global option(s):
 \openout1 = `"Inhaltsbasierte Musikempfehlung mit tiefen Neuronalen Netzwerken.
 aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 103.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 103.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 109.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 109.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Try loading font information for T1+pplx on input line 103.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Try loading font information for T1+pplx on input line 109.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pplx.fd"
@@ -990,13 +993,13 @@ File: t1pplx.fd 2004/09/06 font definitions for T1/pplx.
 (C:\Users\Markus\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count127
-\scratchdimen=\dimen155
-\scratchbox=\box58
+\scratchdimen=\dimen156
+\scratchbox=\box59
 \nofMPsegments=\count128
 \nofMParguments=\count129
 \everyMPshowfont=\toks29
 \MPscratchCnt=\count130
-\MPscratchDim=\dimen156
+\MPscratchDim=\dimen157
 \MPnumerator=\count131
 \makeMPintoPDFobject=\count132
 \everyMPtoPDFconversion=\toks30
@@ -1013,7 +1016,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Info: Redefining \microtypecontext on input line 103.
+LaTeX Info: Redefining \microtypecontext on input line 109.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1052,7 +1055,7 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 * \marginparwidth=65.0pt
 * \marginparsep=11.0pt
 * \columnsep=20.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=33.0pt plus 9.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -1065,8 +1068,8 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box59
-Package hyperref Info: Link coloring OFF on input line 103.
+\AtBeginShipoutBox=\box60
+Package hyperref Info: Link coloring OFF on input line 109.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -1075,9 +1078,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count133
 )
-LaTeX Info: Redefining \ref on input line 103.
-LaTeX Info: Redefining \pageref on input line 103.
-LaTeX Info: Redefining \nameref on input line 103.
+LaTeX Info: Redefining \ref on input line 109.
+LaTeX Info: Redefining \pageref on input line 109.
+LaTeX Info: Redefining \nameref on input line 109.
 
 ("Inhaltsbasierte Musikempfehlung mit tiefen Neuronalen Netzwerken.out")
 ("Inhaltsbasierte Musikempfehlung mit tiefen Neuronalen Netzwerken.out")
@@ -1086,57 +1089,57 @@ LaTeX Info: Redefining \nameref on input line 103.
 out"'.
 
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <20> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 106.
-LaTeX Font Info:    Try loading font information for OT1+pplx on input line 106
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 111.
+LaTeX Font Info:    Try loading font information for OT1+pplx on input line 111
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1pplx.fd"
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 106
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 111
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omlzplm.fd"
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 106
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 111
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omszplm.fd"
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 106
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 111
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omxzplm.fd"
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 106.
+(Font)              scaled to size 12.50409pt on input line 111.
 
 (C:\Users\Markus\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 106.
+(Font)              scaled to size 9.37807pt on input line 111.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 106.
+(Font)              scaled to size 7.29405pt on input line 111.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 106.
+(Font)              scaled to size 12.50409pt on input line 111.
 
 (C:\Users\Markus\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 106.
+(Font)              scaled to size 9.37807pt on input line 111.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 106.
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 106.
+(Font)              scaled to size 7.29405pt on input line 111.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 111.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 106
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 111
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1zplm.fd"
@@ -1150,317 +1153,257 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplx/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Overfull \hbox (15.49199pt too wide) in paragraph at lines 106--106
+Overfull \hbox (15.49199pt too wide) in paragraph at lines 111--111
  [][] 
  []
 
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <10> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 112.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 113.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 118.
+(Font)              scaled to size 10.42007pt on input line 117.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 118.
+(Font)              scaled to size 7.91925pt on input line 117.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 118.
+(Font)              scaled to size 6.25204pt on input line 117.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 118.
+(Font)              scaled to size 10.42007pt on input line 117.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 118.
+(Font)              scaled to size 7.91925pt on input line 117.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 118.
+(Font)              scaled to size 6.25204pt on input line 117.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 118.
+(Font)              scaled to size 8.33606pt on input line 117.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 118.
+(Font)              scaled to size 5.21004pt on input line 117.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 118.
+(Font)              scaled to size 8.33606pt on input line 117.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 118.
+(Font)              scaled to size 5.21004pt on input line 117.
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--124
+Underfull \hbox (badness 10000) in paragraph at lines 117--123
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--131
+Underfull \hbox (badness 10000) in paragraph at lines 124--129
 
  []
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 1 might be wrong on input line 131.
+(multicol)                Footnotes on page 1 might be wrong on input line 129.
 
 
 LaTeX Font Info:    Font shape `T1/pplx/m/sl' in size <10> not available
-(Font)              Font shape `T1/pplx/m/it' tried instead on input line 131.
+(Font)              Font shape `T1/pplx/m/it' tried instead on input line 129.
 [1{C:/Users/Markus/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 ]
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <12> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 132.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 129.
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--136
+Underfull \hbox (badness 10000) in paragraph at lines 130--133
 
  []
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 2 might be wrong on input line 146.
+(multicol)                Footnotes on page 2 might be wrong on input line 140.
 
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 148--151
+Underfull \hbox (badness 10000) in paragraph at lines 141--144
 
  []
 
 <img/faltung2.png, id=119, 211.54031pt x 186.6975pt>
 File: img/faltung2.png Graphic file (type png)
 <use img/faltung2.png>
-Package pdftex.def Info: img/faltung2.png  used on input line 164. on input lin
-e 164.
+Package pdftex.def Info: img/faltung2.png  used on input line 149. on input lin
+e 149.
 Package pdftex.def Info: Requested size: 211.53978pt x 186.69704pt on input lin
-e 164.
+e 149.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 165.
+(caption)                particular \caption on input line 150.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (18.03902pt too wide) in paragraph at lines 164--165
+Overfull \hbox (18.03902pt too wide) in paragraph at lines 149--150
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--168
+Underfull \hbox (badness 10000) in paragraph at lines 147--153
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 154--156
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--172
+Underfull \hbox (badness 10000) in paragraph at lines 154--156
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--172
-
- []
-
-[3 <./img/faltung2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 181--183
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 181--183
-
- []
-
-<img/pooling.png, id=146, 182.93344pt x 85.82062pt>
+<img/pooling.png, id=145, 182.93344pt x 85.82062pt>
 File: img/pooling.png Graphic file (type png)
 <use img/pooling.png>
-Package pdftex.def Info: img/pooling.png  used on input line 186. on input line
- 186.
+Package pdftex.def Info: img/pooling.png  used on input line 167. on input line
+ 167.
 Package pdftex.def Info: Requested size: 182.93298pt x 85.82039pt on input line
- 186.
+ 167.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 187.
+(caption)                particular \caption on input line 168.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (10.93376pt too wide) in paragraph at lines 186--187
+Overfull \hbox (10.93376pt too wide) in paragraph at lines 167--168
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--190
+Underfull \hbox (badness 10000) in paragraph at lines 163--171
 
  []
 
-[4 <./img/pooling.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 212--212
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--171
+
+ []
+
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 4 might be wrong on input line 174.
+
+
+[4 <./img/faltung2.png> <./img/pooling.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
 |[]\T1/pplx/b/n/10 Musikempfehlung mit Neu-ro-na-len
  []
 
 <img/hlmdbn.png, id=169, 201.75375pt x 160.34906pt>
 File: img/hlmdbn.png Graphic file (type png)
 <use img/hlmdbn.png>
-Package pdftex.def Info: img/hlmdbn.png  used on input line 258. on input line 
-258.
+Package pdftex.def Info: img/hlmdbn.png  used on input line 203. on input line 
+203.
 Package pdftex.def Info: Requested size: 201.75325pt x 160.34866pt on input lin
-e 258.
+e 203.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 259.
+(caption)                particular \caption on input line 204.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (8.25249pt too wide) in paragraph at lines 258--259
+Overfull \hbox (8.25249pt too wide) in paragraph at lines 203--204
+ [][] 
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--221
+
+ []
+
+<img/hybrid.png, id=187, 215.30438pt x 139.27031pt>
+File: img/hybrid.png Graphic file (type png)
+<use img/hybrid.png>
+Package pdftex.def Info: img/hybrid.png  used on input line 225. on input line 
+225.
+Package pdftex.def Info: Requested size: 215.30385pt x 139.26996pt on input lin
+e 225.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 226.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (21.80309pt too wide) in paragraph at lines 225--226
  [][] 
  []
 
 
-Overfull \hbox (3.49846pt too wide) in paragraph at lines 256--262
-[]$[]$ 
+Underfull \hbox (badness 10000) in paragraph at lines 222--230
+\T1/pplx/m/n/10 (+20) kol-la-bo-ra-ti-ve Fil-ter er-wei-tert, um ei-ne
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--265
+Underfull \hbox (badness 10000) in paragraph at lines 222--230
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--277
+Underfull \hbox (badness 10000) in paragraph at lines 222--230
 
  []
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 5 might be wrong on input line 277.
+(multicol)                Footnotes on page 6 might be wrong on input line 230.
 
 
-
-Overfull \vbox (5.31502pt too high) has occurred while \output is active []
-
-
-[5 <./img/hlmdbn.png>]
-<img/hybrid.png, id=186, 215.30438pt x 139.27031pt>
-File: img/hybrid.png Graphic file (type png)
-<use img/hybrid.png>
-Package pdftex.def Info: img/hybrid.png  used on input line 282. on input line 
-282.
-Package pdftex.def Info: Requested size: 215.30385pt x 139.26996pt on input lin
-e 282.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 283.
-See the caption package documentation for explanation.
-
-
-Overfull \hbox (21.80309pt too wide) in paragraph at lines 282--283
- [][] 
- []
-
+[6 <./img/hlmdbn.png> <./img/hybrid.png>]
 ("Inhaltsbasierte Musikempfehlung mit tiefen Neuronalen Netzwerken.bbl"
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 6 might be wrong on input line 37.
+(multicol)                Footnotes on page 7 might be wrong on input line 42.
 
-[6 <./img/hybrid.png>]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 84.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `cmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--85
-\T1/pplx/m/n/10 (+20) an-ford Uni-ver-si-ty, 2017.  []$\T1/cmtt/m/n/10 https :
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--85
-\T1/cmtt/m/n/10 / / github . com / cs231n / cs231n . github .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--85
-\T1/cmtt/m/n/10 io / blob / master / convolutional -[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 87--91
-[]\T1/pplx/m/n/10 (+20) Ian Good-fel-low, Yos-hua Ben-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 87--91
-\T1/pplx/m/n/10 (+20) gio, and Aaron Cour-ville.  \T1/pplx/m/it/10 De-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 87--91
-\T1/pplx/m/it/10 ep Lear-ning\T1/pplx/m/n/10 (+20) .  MIT Press, 2016.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--96
-[]\T1/pplx/m/n/10 (+20) wikipedia, 2017.  []$\T1/cmtt/m/n/10 https : / / de .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--96
-\T1/cmtt/m/n/10 wikipedia . org / wiki / Convolutional _
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--96
-\T1/cmtt/m/n/10 Neural _ Network # /media / File :
- []
-
-)
-
-Package caption Warning: Unused \captionsetup[faltung] on input line 37.
-See the caption package documentation for explanation.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 300.
-[7]
-Overfull \vbox (14.05502pt too high) has occurred while \output is active []
-
-
-[8
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 300.
+[7])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 254.
+ [8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 254.
  ("Inhaltsbasierte Musikempfehlung mit tiefen Neuronalen Netzwerken.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 300.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 300.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 254.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 254.
 Package rerunfilecheck Info: File `"Inhaltsbasierte Musikempfehlung mit tiefen 
 Neuronalen Netzwerken".out' has not changed.
-(rerunfilecheck)             Checksum: 29FC1AF8F77D6E31179BD9B9EA89F0E3;1225.
+(rerunfilecheck)             Checksum: 3D9311AEF7303C046B3DC5950D5D09FD;1213.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.43996pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 300.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 254.
  ) 
 Here is how much of TeX's memory you used:
- 12359 strings out of 493312
- 184568 string characters out of 3138896
- 321390 words of memory out of 3000000
- 15313 multiletter control sequences out of 15000+200000
- 89331 words of font info for 339 fonts, out of 3000000 for 9000
+ 12290 strings out of 493312
+ 182903 string characters out of 3138896
+ 316552 words of memory out of 3000000
+ 15240 multiletter control sequences out of 15000+200000
+ 89241 words of font info for 341 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,14n,43p,2343b,732s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Markus\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
-\ectt1000.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Markus/AppData/Roaming/M
-iKTeX/2.9/fonts/type1/public/mathpazo/fplmr.pfb><C:/Users/Markus/AppData/Roamin
-g/MiKTeX/2.9/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/Markus/AppData/Ro
-aming/MiKTeX/2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/u
-plri8a.pfb>
+ 36i,15n,46p,1294b,732s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Markus/AppData/Roaming/MiKTeX/2.9/f
+onts/type1/public/mathpazo/fplmr.pfb><C:/Users/Markus/AppData/Roaming/MiKTeX/2.
+9/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/Markus/AppData/Roaming/MiKTe
+X/2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatin
+o/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
+
 Output written on "Inhaltsbasierte Musikempfehlung mit tiefen Neuronalen Netzwe
-rken.pdf" (8 pages, 239734 bytes).
+rken.pdf" (8 pages, 229270 bytes).
 PDF statistics:
- 303 PDF objects out of 1000 (max. 8388607)
- 62 named destinations out of 1000 (max. 500000)
- 65677 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 259 PDF objects out of 1000 (max. 8388607)
+ 63 named destinations out of 1000 (max. 500000)
+ 65165 words of extra memory for PDF output out of 74296 (max. 10000000)
 

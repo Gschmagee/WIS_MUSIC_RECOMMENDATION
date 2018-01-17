@@ -1,6 +1,25 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: Inhaltsbasierte Musikempfehlung mit tiefen Neuronalen Netzwerken.aux
 The style file: unsrt.bst
 Database file #1: lit.bib
+"{" immediately follows a field part---line 156 of file lit.bib
+ :  note=\href
+ :            {\url{http://www.deeplearningbook.org}},
+I'm skipping whatever remains of this entry
+"{" immediately follows a field part---line 164 of file lit.bib
+ :  note=\href
+ :            {\url{https://github.com/cs231n/cs231n.github.io/blob/master/convolutional-networks.md#conv}},
+I'm skipping whatever remains of this entry
+"{" immediately follows a field part---line 180 of file lit.bib
+ :  note=\href
+ :            {\url{https://www.billboard.com/articles/business/7972868/us-music-industry-revenue-growth-accelerates-paid-streaming-50-percent}},
+I'm skipping whatever remains of this entry
+"{" immediately follows a field part---line 198 of file lit.bib
+ :  note=\href
+ :            {\url{https://de.wikipedia.org/wiki/Convolutional_Neural_Network#/media/File:3D_Convolution_Animation.gif}},
+I'm skipping whatever remains of this entry
 Warning--empty author and editor in wikipic
 Warning--empty title in wikipic
-(There were 2 warnings)
+Warning--empty year in wikipic
+Warning--empty year in karpathy
+Warning--empty year in goodfellow
+(There were 4 error messages)

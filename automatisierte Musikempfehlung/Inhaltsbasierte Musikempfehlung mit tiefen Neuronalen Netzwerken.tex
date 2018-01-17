@@ -29,12 +29,18 @@
 \usepackage{paralist}
 \usepackage{multicol}
 
+%--------
+%Footnote
+\usepackage{footnote}
+\usepackage{perpage} %the perpage package
+\MakePerPage{footnote} %the perpage package command
+\addtolength{\skip\footins}{2pc plus 5pt}
 %------
 %caption hack
 \usepackage{caption}
 
-\DeclareCaptionType{faltung}[][List of equations]
-\captionsetup[faltung]{labelformat=empty}
+%\DeclareCaptionType{faltung}[][List of equations]
+%\captionsetup[faltung]{labelformat=empty}
 
 % ------
 % Abstract
@@ -101,104 +107,83 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-	
 	\maketitle
 	\thispagestyle{fancy}
-	
-	
-	
 	\begin{multicols}{2}
-		
 		\begin{abstract}
 			\noindent Hier kommt die Zusammenfassung...
 		\end{abstract}
-		
-		
 		\section{Einleitung}
 		Im ersten Halbjahr des Jahres 2017 wurden 62\% der Einnahmen der amerikanischen Musikindustrie durch Streaming Plattformen\footnote[1]{wie Spotify, Apple Music, Pandora etc.} erzielt. Im Vergleich zu Vorjahr erhöhten sich dadurch die Einnahmen um 48\% auf 2.5\$ Milliarde \cite{friedlander}. Dieser Erfolg basiert nicht nur auf einer guten Verfügbarkeit der Lieder und einem günstigen Preis sondern auch auf automatischen Musikempfehlungsdiensten, welche dem Nutzer ein angenehmeres Konsumverhalten ermöglichen.\newline
-		Obwohl Empfehlungsdienste in den letzten Jahren viel erforscht wurden, ist das Problem der Musikempfehlung sehr komplex. Neben einer große Anzahl an verschiedenen Stile und Genres, beeinflussen sowohl soziales- und geographisches Umfeld, sowie der aktuelle Gemütszustandes die Vorliebe eines Hörers. Diese Aspekte müssen in einem Musikvorschlag berücksichtigt werden. \cite{oord}\newline
+		Obwohl Empfehlungsdienste in den letzten Jahren viel erforscht wurden, ist das Problem der Musikempfehlung sehr komplex. Neben einer großen Anzahl an verschiedenen Stile und Genres, beeinflussen sowohl soziales- und geographisches Umfeld, sowie der aktuelle Gemütszustand die Vorliebe eines Hörers. Diese Aspekte müssen in einem Musikvorschlag berücksichtigt werden. \cite{oord}\newline
 		Neben der Empfehlung bestimmter Lieder sollen Empfehlungssysteme zusätzlich noch das Cold-Start Problem sowohl bei einem Benutzer\footnote[2]{New User Problem (NUP)} als auch bei einem Lied\footnote[3]{New Song Problem (NSP)} überwinden. Das Cold-Start Problem besteht darin, dass noch keine Bewertungen für ein Lied vorliegen, wodurch es auch nicht vorgeschlagen werden kann. Dasselbe Problem gibt es bei einem neuen Benutzer: diesem kann kein guter Vorschlag gemacht werden, da es an Information mangelt welche Art von Musik ihm gefällt. \cite{celma}\\
 		Mit Hilfe von Convolutional Neuronalen Netzwerken (CNN) können noch nicht alle Probleme überwunden werden, aber sowohl das NSP als auch die Empfehlung werden durch die Verwendung eines CNN als Empfehlungssystem verbessert.\newline\\
-		Der weitere Verlauf der wissenschaftlichen Arbeit ist wie folgt organisiert. Im 2. Abschnitt werden die Grundlagen der Musikempfehlung vorgestellt. Im 3. Kapitel wir der Aufbau von Neuronale Netze, sowei zwei Neuronale Netze für inhaltsbasierte Musikempfehlung beschrieben. Im letzten Abschnitt schließt diese Arbeit mit einem Vergleich der Ergebnisse der beiden Modelle.
+		Der weitere Verlauf der wissenschaftlichen Arbeit ist wie folgt organisiert. Im 2. Abschnitt werden die Grundlagen der Musikempfehlung vorgestellt. Im 3. Kapitel wir der Aufbau von Neuronale Netze, soweit zwei Neuronale Netze für inhaltsbasierte Musikempfehlung beschrieben. Im letzten Abschnitt schließt diese Arbeit mit einem Vergleich der Ergebnisse der beiden Modelle.
 		TODO
-	
 		\section{Grundlagen der Musikempfehlung}
-		In dem Gebiet des Musik Information Retrieval (MIR) gibt es vier Kategorien \cite{schedl} die einen Einfluß auf die Wahrnehmung von ähnlicher Musik haben.\newline \textit{Musikmerkmale} sind Eigenschaften, welche aus dem Audiosignal eines Liedes extrahiert werden. Dazu zählen Aspekte wie der Rhythmus, die Melodie, die Harmonie oder die Stimmung eines Stücks.\newline
+		In dem Gebiet des Musik Information Retrieval (MIR) gibt es vier Kategorien \cite{schedl} die einen Einfluss auf die Wahrnehmung von ähnlicher Musik haben.\newline \textit{Musikmerkmale} sind Eigenschaften, welche aus dem Audiosignal eines Liedes extrahiert werden. Dazu zählen Aspekte wie der Rhythmus, die Melodie, die Harmonie oder die Stimmung eines Stücks.\newline
 		Als \textit{Musikkontext} versteht man alle Aspekte, die nicht aus dem Audiosignal abgeleitet werden, sondern Informationen die über ein Musikstück bekannt sind. Beispielsweise Metadaten wie der Titel eines Lieds, das Genre, Name des Künstlers oder das Erscheinungsjahr.\newline
 		Die \textit{Benutzereigenschaften} beziehen sie auf Persönlichkeitsmerkmale, wie Geschmack, musikalisches Wissen und Erfahrung oder den demographischen Hintergrund.\newline
-		Im Unterschied dazu steht der \textit{Benutzerkontext}, der sich auf die aktuelle Situation des Hörers bezieht. Dabei wird er durch seine Umgebung, seiner Stimmung oder der aktuellen Aktivität beeinflußt. \cite{knees}\newline\\
-		Es gibt verschiedene Methoden, die in Musikempfehlungssystemen verwendet werden: kollaboratives -, merkmalsbasiertes -, kontext-basiertes Filtern und die hybride Methode. Diese werden genutzt, um Informationen aus den genannten Eigenschaften zu gewinnen und diese für Empfehlungen an den Nutzer zu verarbeiten. \cite{wang}
-	
+		Im Unterschied dazu steht der \textit{Benutzerkontext}, der sich auf die aktuelle Situation des Hörers bezieht. Dabei wird er durch seine Umgebung, seiner Stimmung oder der aktuellen Aktivität beeinflusst. \cite{knees}\newline\\
+		Es gibt verschiedene Methoden, die in Musikempfehlungssystemen verwendet werden: kollaboratives -, merkmalsbasiertes -, kontextbasiertes Filtern und die hybride Methode. Diese werden genutzt, um Informationen aus den genannten Eigenschaften zu gewinnen und diese für Empfehlungen an den Nutzer zu verarbeiten. \cite{wang}
 		\subsection{Kollaborativer Filter}
 		Kollaboratives Filtern prognostiziert Vorlieben eines Hörers, indem es aus unterschiedlichen Benutzer-Lied Verhältnissen lernt. Es basiert auf der Annahme, dass Verhalten und Bewertungen andere Nutzer auf eine vernünftige Vorhersage für den aktiven Benutzer schließen lassen \cite{celma}. Durch explizite\footnote[4]{ Bewertungen eines Nutzers} und implizite\footnote[5]{Beobachten des Konsumverhalten} Rückmeldung eines Hörers an das Empfehlungssystem empfiehlt dieses neue Lieder, indem es Gemeinsamkeiten auf Basis seiner Bewertungen mit dem Nutzungsverhalten anderer Anwender der gleichen Plattform vergleicht \cite{mcfee}.\newline
 		In der praktischen Umsetzung bedeutet dies: hört ein Anwender ein bestimmtes Musikstück. Dann werden ihm, von der Empfehlungsplattform, Lieder vorgeschlagen welche andere Nutzer, die ebenfalls dieses Lied hörten, hören. Dieses Verfahren geht davon aus, dass durch die Verbindung der Lieder durch vorhergehende Aufrufe eine gute Aussage darüber getroffen werden kann wie gut diese Stücke zusammen passen. Werden Lieder häufig nacheinander gehört (todo), wird diese Verbindung höher bewertet und die Empfehlung häufiger ausgesprochen. Auch wird das Verhalten und der Musikgeschmack des Kunden selbst durch ein System analysiert, um so über Ähnlichkeiten der Kundenpräferenzen mit derer anderer, diesen wiederum bessere Empfehlungen aussprechen zu können. So werden Lieder einem Musikstil zugeordnet und so zielgerichtet dem Nutzer nahegelegt.\newline
 		Verschiedene Studien (\cite{mcfee}\cite{barrington}) zeigen, dass KF alternative Methoden in der Genauigkeit übertrifft, weshalb es nicht nur im Bereich der Musikempfehlung als die erfolgreichste gilt.\newline
-		
-		\subsection{Merkmalsbasierter Filter}
+		\subsection{Merkmalbasierter Filter}
 		%Als erstes wird nun ein genauerer Blick auf den inhaltsbezogenen Ansatz geworfen. Mittels diesem Verfahrens werden Nutze Musikstücke aufgrund aus Lieder gewonnener Informationen vorgeschlagen. Dies bedeutet im Detail dass aus den Musikstücken mittels verschiedenster Metriken die Audio Signale eines Liedes analysiert werden um Erkenntnisse über die Stimmung eines Musikstücks, die Frequenz oder Rhythmus zu erhalten. Auf Grund dieser Informationen können Stücke dem Konsumenten vorgeschlagen werden die einen gleichen oder sehr ähnlichen Inhalt bieten.
-		\subsection{Kontextbasierter Filter}
-
-				
+		\subsection{Kontextbasierter Filter}				
 		\subsection{Hybride Methode}
 		Bei hybriden Methoden werden kollaborative, merkmalsbasierte und kontextbasierter Filter miteinander verknüpft, wodurch ein besseres Empfehlungsergebnis mit weniger Nachteilen der einzelnen Methode zu erzielen. Meistens wird ein kollaborativer Filter mit einem der beiden anderem kombiniert.\newline
-		Als \textit{gewichtet} wird eine hybride Methode bezeichnet, bei der Empfehlungsrate der einzelnen Methoden durch eine Linearkombination zusammengerechnet wird. Das Ergebnis der Linearkombination stellt den Empfehlungswertes eines Liedes dar. Durch unterschiedliche Gewichtung der Methoden kann das Empfehlungsergebnis optimiert werden. Der \textit{wechselnde} Ansatz benutzt ein bestimmtes Kriterium anhand dessen es die Methode zur Vorschlagsbestimmung wechselt. Dies kann beispielsweise dann der Fall sein, wenn der erste Filter kein zuverlässiges Ergebnis\footnote[6]{semantische Unterschiede} liefert. Dann wechselt das System den Filter und kann ein besseres Empfehlungsergebnis bekommen. Bei \textit{gemischten} hybriden Empfehlungen werden unterschiedliche Techniken\footnote[7]{meist kollaborativ mit inhaltsbasiertem Filter} miteinander vermischt. Dadurch kann für ein System mit inhaltsbasierten Filter das Cold-Start Problem vermieden werden.\newline
+		Als \textit{gewichtet} wird eine hybride Methode bezeichnet, bei der Empfehlungsrate der einzelnen Methoden durch eine Linearkombination zusammengerechnet wird. Das Ergebnis der Linearkombination stellt den Empfehlungswerte eines Liedes dar. Durch unterschiedliche Gewichtung der Methoden kann das Empfehlungsergebnis optimiert werden. Der \textit{wechselnde} Ansatz benutzt ein bestimmtes Kriterium anhand dessen es die Methode zur Vorschlagbestimmung wechselt. Dies kann beispielsweise dann der Fall sein, wenn der erste Filter kein zuverlässiges Ergebnis\footnote[6]{semantische Unterschiede} liefert. Dann wechselt das System den Filter und kann ein besseres Empfehlungsergebnis bekommen. Bei \textit{gemischten} hybriden Empfehlungen werden unterschiedliche Techniken\footnote[7]{meist kollaborativ mit inhaltsbasiertem Filter} miteinander vermischt. Dadurch kann für ein System mit inhaltsbasierten Filter das Cold-Start Problem vermieden werden.\newline
 		Hybride Methoden können einige Nachteile von kollaborativen Filtern entfernen. Allerdings stehen auch sie vor dem NUP. Dennoch sind hybride Methoden sehr beliebt, da Information über einen neuen Benutzer schnell herausgefunden\footnote[8]{Datamining} werden oder durch Profilangaben bereits nach der Registrierung vorhanden sind. \cite{burke}
-
 		\section{Neuronale Netzen in der MIR}
 		CNN sind durch das biologische Sehen inspiriert und konnten den ersten großen Erfolg im Bereich der Bildklassifizierung \cite{alex} verzeichnen. Trotzdem werden CNN auch in verschiedenen Audiobereich, wie der Spracherkennung \cite{graves} sowie in der MIR mehr genutzt und erforscht.\newline
-		In der MIR nutzen die ersten Forschungen CNNs, um die Aufgabe der Musikgenre-Klassifizierung \cite{lee} zu untersuchen. Die Ergebnisse\footnote[9]{richtigen Klassifizierung} zeigen, das eine automatisierte Klassifizierung die herkömmliche Methode MFCC deutlich übertriff. Das erste CNN für inhaltsbasierte Musikempfehlung \cite{oord} benutzt zunächst eine Matrix-Faktorisierung um Eigen Vektoren für alle Lieder zu erhalten. Anschließend wird das Neuronale Netz für die Zuordnung der Audio-Inhalte zu den Eigen Vektoren genutzt. \cite{wang}\newline\\
+		In der MIR nutzen die ersten Forschungen CNNs, um die Aufgabe der Musikgenre-Klassifizierung \cite{lee} zu untersuchen. Die Ergebnisse\footnote[9]{richtigen Klassifizierung} zeigen, das eine automatisierte Klassifizierung die herkömmliche Methode MFCC deutlich übertrifft. Das erste CNN für inhaltsbasierte Musikempfehlung \cite{oord} benutzt zunächst eine Matrix-Faktorisierung um Merkmalsvektoren\footnote[10]{Eigenschaften eines Musters in Vektordarstellung} für alle Lieder zu erhalten. Anschließend wird das Neuronale Netz für die Zuordnung der Audio-Inhalte an die Merkmalsvektoren genutzt. \cite{wang}\newline\\
 		Im nachfolgenden Absatz werden die Schichten und das supervised\footnote[10]{Ausgabeergebnisse der Testdaten sind vorhanden} Training eines CNN beschrieben.
-		
-%Nachdem Alex Krizhevsky mit seinem Team den ImageNet ILSVRc-2012 Contest mit Hilfe eines CNN gewann. Wurden CNNs auch in anderen Bereichen neben der Bildklassifizierung \cite{alex} in Gesichtserkennung \cite{ding}, Spracherkennung \cite{graves} und der Inhaltsbasierten Musikempfehlung \cite{oord} mehr genutzt und erforscht.\newline
-%Um diese unterschiedliche Funktionalität zu lernen, werden CNN mit drei verschiedenen Arten trainiert. Dem überwachten Lernen (supervised learning) bei dem das DNN eine Eingabe erhält, dessen Ausgabe bekannt ist. Durch das Vergleichen der Netzwerkausgabe mit der Erwarteten, kann das DNN dementsprechend konfiguriert werden. Beim Unbewachten Lernen (unsupervised learning) erhält das DNN verschiedene Eingaben und soll selbständig zusammenhänge zwischen diesen erkennen. Beim bestärkten Lernen (reinforcement learning) befindet sich das DNN in einer ihm unbekannter Umgebung, die es zu erforschen gilt. Gewünschtes Verhalten wird belohnt, wodurch es lernt die richtigen Entscheidungen zu treffen \cite{wang2}.\newline 
-%Vor allem in den letzten Jahren hat sich das Convolutional Neuronales Netzwerk (CNN) als das erfolgversprechendste DNN erwiesen.\newline 
-%Im folgenden Absatz wird eine Übersicht über den Aufbau, das Training und die Besonderheiten eines CNNs dargelegt. Anschließend werden verschiedene Ansätze der Inhaltsbasierten Musikempfehlung miteinander verglichen.
-		
 		\subsection{Convolutional Neuronalen Netze}
 		In einer CNN Architektur werden drei Haupttypen von Schichten/Ebenen verwendet: Convolutional Layer (CL), Pooling Layer (PL) und Fully-Connected Layer (FCL). Jede Schicht besteht aus einer Anzahl von Knoten, die die Eingabedaten der Ebene wieder spiegeln. Knoten einer Schicht sind nur mit Knoten der nächsten Ebene verbunden. Diese Verbindung wird als Gewicht oder Parameter bezeichnet. Durch das Training von bekannten Daten und Ergebnissen werden diese Parameter automatisch angepasst. Anschließend ist das CNN fähig das Ergebnis unbekannter Daten zu errechnen.
-		
 		\subsubsection{Schichten eines Convolutional Neuronalen Netzwerks}
-		
 		\begin{minipage}{0.45\textwidth}
 			\centering
 			\includegraphics{img/faltung2.png}
 			\captionof{figure}{Faltung einer 6x6 Matrix mit einem 3x3 Filter \cite{wikipic}}
 			\label{img:faltung}
 		\end{minipage}\newline
-	
 		\subsubsection*{Convolutional Layer}
 		In einem CL findet eine Faltung der Eingangsdaten, in Form einer Matrix, und einem oder mehreren Filtern statt. Ein Filter dient beispielsweise zur Glättung oder zur Verkleinerung der Daten. Eine Verkleinerung der Eingangsmatrix findet statt, wenn ein Filter ohne Zero-padding\footnote[11]{Eine Matrix wird am Rand um Nullen erweitert.\\ Bsp. aus einer 7x7 Matrix wird eine 9x9 Matrix} verwendet wird. Die Parameter eines Filters werden zufällig initialisiert, können aber mit Hilfe des Backpropagation Verfahren (3.1.2) angepasst werden. Werden mehrere Filter auf die Eingangsdaten angewendet, ändert sich die Tiefe der gesamten Ausgangsmatrix entsprechend der Anzahl der Filter. \cite{karpathy}\newline
-		In Abbildung \ref{img:faltung} ist die Eingabematrix \textit{I} eine 6x6 Matrix und \textit{K} ein 3x3 Filter. Die Ausgabematrix \textit{S} wir an den Stellen (i,j) durch die nachfolgende Gleichung berechnet. Eine genauere Herleitung der Gleichung findet der Leser u. a. bei \cite{goodfellow}(328f).\newline\\
-		
+		In Abbildung \ref{img:faltung} ist die Eingabematrix \textit{I} eine 6x6 Matrix und \textit{K} ein 3x3 Filter. Die Ausgabematrix \textit{S} wir an den Stellen (i,j) durch die nachfolgende Gleichung berechnet. Eine genauere Herleitung der Gleichung findet der Leser u. a. bei \cite{goodfellow}(328f).\newline\\	
 		\begin{equation*}
 		S(i,j) =(I \star K)(i,j)
 		\end{equation*}
 		\begin{equation*}
 		(I \star K)(i,j) =\newline\sum_{m}^{}\sum_{n}^{}I(i+m,j+n)K(m,n)
 		\end{equation*}\newline\\
-		
 		\subsubsection*{Pooling Layer}
 		Ein PL wird zwischen zwei CL eingefügt. Ihre Funktion besteht darin, die Größe der Daten zu reduzieren und damit die Anzahl der Parameter für das nächste CL. Durch die Reduzierung wird die Berechnung des gesamten Netzwerkes beschleunigt. \cite{karpathy}\newline Ein PL wandelt die Ausgabe eines CL, durch eine statistische Zusammenfassung von nebeneinander liegenden Ausgängen um. Verschiedene Methoden für ein Pl sind: Max Pooling \cite{zhou}, eine Übergabe der größten Zahl in einem rechteckigen Umfeld; die Durchschnittsberechnung des Umfeldes oder ein gewichteter Durchschnitt basierend auf der Entfernung eines zentralen Punktes \cite{goodfellow}(355).\newline
 		Abbildung \ref{img:pooling} zeigt einen 2x2 Max-Filter, der auf eine 4x4 Datenmatrix angewandt wird. Die Verschiebung oder Stride des Filters ist 2 dh. der Filter wird zunächst auf der y-Achse verschoben. Erreicht er dort das Ende wird er um eine Stride auf der x-Achse verschoben und beginnt wieder mit der y-Verschiebung.\newline\\
-		
 		\begin{minipage}{0.4\textwidth}
 			\centering
 			\includegraphics{img/pooling.png}
 			\captionof{figure}{Maxpooling mit einem 2x2 Filter\cite{karpathy}}
 			\label{img:pooling}
 		\end{minipage}\newline
-		
-		\subsubsection*{Fully-Connected Layer} toDo\\
-		Neuronen in einer FCL haben Verbindungen zu allen Knoten der vorherigen Schicht. Ihre Aktivierung wird durch eine Matrixmultiplikation und einem Bias-Offset berechnet \cite{karpathy}. Die FCL wird als Ausgabeschicht verwendet um aus der Eingangsmatrix einen Vektor zu erzeugen.
-		
-		\subsubsection{Supervised Training}
-		CNNs werden durch die Backpropagation Methode trainiert. Backpropagation basiert auf dem Gradientenverfahren, welches versucht für die Fehlerfunktion \textit{E}, durch sukzessive Iteration der Parameter ein globales Minimum zu finden, meistens aber nur ein Lokales findet. Um das Minimum zu erreichen, werden die Werte der Parameter \textit{w}\textsubscript{ij} durch Verwendung der Kettenregel, der partiellen Ableitung, berechnet:\footnote[12]{Ausgabeparameter \textit{o}, beliebige Anzahl an Knoten \textit{net} zwischen Ausgabe und \textit{w}}
+		\subsubsection*{Fully-Connected Layer}
+		Ein oder mehrere geschachtelte FCL dienen bei einem Klassifizierungsproblem aus Ausgabeschicht. Die Anzahl der Knoten in der letzten FCL entsprechen der Anzahl der Klassen, die das CNN unterscheiden soll.
+		Jeder Knoten in einer FCL hat eine Verbindungen zu allen Knoten der vorherigen Schicht. Die Ausgabe der FCL ist ein Vektor, in der jeder Eintrag die Wahrscheinlichkeit der jeweiligen Klasse spiegelt. \cite{karpathy}
+		\subsubsection{Training}
+		CNNs werden durch die Backpropagation Methode trainiert. Backpropagation basiert auf dem Gradientenverfahren, welches versucht für die Fehlerfunktion \textit{E}, durch sukzessive Iteration der Parameter ein globales Minimum zu finden, meistens aber nur ein lokales findet. Um das Minimum zu erreichen, werden die Werte der Gewichte \textit{w}\textsubscript{ij} durch Verwendung der Kettenregel, der partiellen Ableitung, berechnet:\footnote[12]{Ausgabeparameter \textit{o}, beliebige Anzahl an Knoten \textit{net} zwischen Ausgabe und \textit{w}}
 		\begin{equation*}
 		\centering
 		\frac{\partial\textit{E}}{\partial\textit{w}\textsubscript{ij}} = \frac{\partial\textit{E}}{\partial\textit{o}\textsubscript{j}} \frac{\partial\textit{o}\textsubscript{j}}{\partial\textit{net}\textsubscript{j}}  \frac{\partial\textit{net}\textsubscript{j}}{\partial\textit{w}\textsubscript{ij}} 
+		\end{equation*}\newline
+		Der neue Wert eines Parameters \textit{w} zum Zeitpunkt \textit{t} lässt sich dann durch die folgende Formel berechnen:
+		\begin{equation*}
+		\centering
+		\textit{w}(\textit{t}) = \textit{w}(\textit{t}-1) + \eta * \frac{\partial\textit{E}}{\partial\textit{w}} 
 		\end{equation*}
+		Die Lernrate $\eta$ ist eine Konstante die definiert werden muss.\newline
 		Anhand der Kostenfunktion, kann die Parameteranpassung und damit der funktionale Wert eines CNN mit reellen Zahlen dargestellt und verglichen werden. Diese Funktion \textit{C} lässt sich durch die Summe über Trainingsbeispiele \textit{m} und einer Fehlerfunktion \textit{E}, hier die negativ conditional Log-Likelihood\footnote[13]{Abgeleitet von Maximum Likelihood, Dichtefunktion für Maximafindung} darstellen: 
-		
 		\begin{equation*}
 			\centering
 			E(x,y) = -log p(y|x)
@@ -208,60 +193,19 @@
 			\textit{C} = \frac{1}{m}\sum_{i=1}^{m}E(x\textsuperscript{i},y\textsuperscript{i})
 		\end{equation*}
 		Das Training eines Netzes ist abgeschlossen, wenn die Kostenfunktion minimal ist bzw. wenn in einem gegebenen Zeitraum keine bessere Kostenfunktion gefunden wird. \cite{goodfellow}(80ff,129ff)
-		
 		\subsection{Musikempfehlung mit Neuronalen Netzwerken}
-		
 		\subsubsection*{Anwendung eines CNN zur automatischen Musikempfehlung}
-\begin{comment}		
-		Ansatz:
-		Um das TODO Verzweigung TODO vorgestellt Problem der Semantischen Lücke zu lösen, kommt ein solches neuronales Netz zum Einsatz \cite{oord}. Dieser Ansatz wird wie folgt umgesetzt: das Netz wird darauf trainiert latente Faktoren aus einzelnen Musikstücken zu generieren, welche für eine Empfehlung verwendet werden. Dieses Verfahren wird anschließend im Vergleich mit einem konventionellen Ansatz, welcher dem Bag-of-Words Prinzip folgt. Daraus folgend wird beurteilt, inwiefern mittel CNN Eigenschaften zur spezifizierung des Nutzergeschmacks generiert und ausgewertet werden können.  In den folgenden Absätzen TODO wirklich Absätze? TODO wird auf diesen Ansatz nun genauer eingegangen.
-		
-		TODO Unterkaptiel einfügen TODO
-		
-		Als Datenbasis zur Umsetzung dieses neuen Ansatzes wurden verschiedene Musik Datensätze in Betracht gezogen. Diese stehen im zusammenhang mit dem Million Song Dataset TODO ABkürzung TODO, dieser Datensatz verfügt über Metainformationen und bereits analysierter Audio Informationen von einer Millionen Liedern. Ebenso ist dieser Datensatz öffentlich zugänglich und kann kostenlos heruntergeladen werden, des weiteren stellt dieser derzeit die größte Forschungsdatenbasis im Gebiet der Musikanalyse dar. Zwei Datensätze im Umfeld des MSD sind von besonderem Interesse, der Echo Nest Taste Profile Subset Datensatz und der The Last.fm Datensatz. Die Problematiken mit diesen Datensätzen, waren zum einen einem die schlechte Dokumentation der Generierung der Informationen und der Daten selbst, sowie das keine unverarbeiteten Musikquellen mitgeliefert werden. Das Problem der nicht vorhanden Rohdaten konnte beseitigt werden, in dem für 99\% des Datensatzes Musikschnipsel mit der Dauer von 29 Sekunden von 7digital.com bezogen wurden. Auf der Seite 7digital.com können einzelne Musikstücke 30 Sekunden lang Probegehört werden.TODO anders erläutern TODO TODO generell zu gleich mit dem Million Song Dataset Eintrag im Original Dokument, noch anpassen vll erweiter oder umändern TODO. 
-		Der ENTPS sticht durch seine Eigenschaft als größte, bereits mittels kollaborativen Filtern ausgwerteten, Informationsbasis hervor und bietet sich dadurch für ein Weiterverarbeitung mittels CNN an. Auch kann durch die größe der Daten eine realitätsnaher Versuch unternommen werden. Durch die Verwendung dieses Datensatzes, ist zu jedem Lied, pro Nutzer, die genaue Anzahl gespeichert, wie häufig das Stück vom Nutzer angehört wurde. Wie bereits im Kapitel TODO VERWEIS TODO erklärt wird beim Kooperativen Filter angenommen das ein Nutzer ein Lied nur dann oft hört, wenn es im auch gefällt. Um diese Daten für ein Training des neuronalen Netztes zu verwenden, muss ein spezieller Algortihmus angewandt werden. Die üblichen Algorithmen, welche für ein Training eines neuronalen Netzes verwendet werden, dessen ziel eine errechnung von Bewertungen haben, wie TODO BEISPIEL nennen TODO können nicht auf Basis dieser Daten zum Einsatz kommen, denn sie können nicht verarbeiten wenn für ein Lied keine Wertung vorliegt. tODO Satz auftrennen TODO Der Umstand das ein Lied keine Wertung erhalten hat, kann mehrere Gründe haben, unter anderem das ein Nutzer dieses Lied schlicht und ergreifen nicht kennt. Der Nutzer könnte allerdings das Lied bereits kennen, aus anderen Quellen, es nicht mögen und deshalb diesen Titel nicht anhören. Dies führt zu zwei unterschiedlichen Szenarien auf Grundlage der gleichen Wertung. Um diesen Umstand richtig bewerten zu können, muss der Algorithmus flexibel sein. Deshalb kommt ein weighted matrix factorization Algorithmus zum Einsatz. Er wurde ursprünglich Entwickelt um bei der Bewertung von Fernsehshows und deren automatisierter Empfehlung dem Nutzer gegenüber möglichst gute Ergebnisse zu erzielen. Auch in diesem Fall gab es rein implizite Rückmeldung seitens des Nuters. Es wurde gespeichert wie oft ein Nutzer ein Fernsehformat angesehen hat. Auch hier tritt der Fall auf das für Formate von einzelnen Nutzern keine Bewertungen vorlagen. Dies konnte mehrere Gründe haben: der Nutzer kennt das Format nicht, eine Sendung die er noch lieber mochte kommt zur gleichen Sendezeit oder er mag die Sendung nicht. Folglicht auch hier eine Ausgangswertung und drei Verschiedene Schlussfolgerungen möglich.
-		
-		Um einzelne Titel bewerten zu können kommt ein Taste Profile Subset(TODO schöne Übersetzung findne) zum Einsatz. In diesem Subset werden für jeden Song die Anzahl der Abspielungen und der Nutzer festgehalten. Basierend auf der Annahme ein Nutzer würde einen Song nur dann mehrmals hören wenn er ihm gefällt. Dies wird als implizite Bewertung verarbeitet, man weiß nun wie oft ein Nutzer den Track gehört hat, nicht allerdings wie gut er im tatsächlich gefällt. Hat ein Musikstück aber noch keine Bewertung auf Basis von Abspielhäufigkeit erhalten, dadurch das der Nutzer dieses Stück noch nicht angehört haben kann dies allerdings auch daran liegen das er das Lied einfach nicht kennt. Ein Rückschluss darauf das es im Gefällt oder nicht gefällt kann dadurch nicht mit Sicherheit getroffen werden. TODO noch umformulieren TODO
-		Auf dieser Basis kann nicht mit Typischen Matrixen gearbeitet werden, deshalb kommt ein weighted matrix factorization (WMF) algorithmus zum Einsatz. TODO genauer erläutern TODO
-		
-		
-		Um weitere Faktoren für eine Bessere Bewertung mit einfließen lassen zu können wurden folgende Merkmale definiert:
-		
-		Diese definieren und umschreiben. Alles genauer erläutern und die Quellen einfügen.
-		
-		• Extract MFCCs from the audio signals. We computed 13 MFCCs from windows of 1024
-		audio frames, corresponding to 23 ms at a sampling rate of 22050 Hz, and a hop size of 512
-		samples. We also computed first and second order differences, yielding 39 coefficients in total.
-		• Vector quantize the MFCCs. We learned a dictionary of 4000 elements with the K-means
-		algorithm and assigned all MFCC vectors to the closest mean.
-		• Aggregate them into a bag-of-words representation. For every song, we counted how many
-		times each mean was selected. The resulting vector of counts is a bag-of-words feature representation
-		of the song.
-		
-		Jetzt die daraus entstehende Umsetzung ins Neuoranale Netz einpflegen.
-		Linear
-		Parallel
-		
-		Vorgehensweise
-		
-		Erläutern der Objective function
-		
-		Da wir selbst scheinbar kein Experiment machen sollen auswertung deren Experiment und möglicherweise noch die Erläuterung derer Datensätze des Millions songs Teils.
-		Ohne Eigenes Experiment ist es denke ich Eminent wichtig um den Erfolg mittels CNN darlegen zu können.
-\end{comment}
 		\subsection{Hybride Musikempfehlung mit einem Neuronalen Netzwerk}
 		Im Unterschied zu der zuvor dargestellten Forschung (3.2) wird in der jetzigen ein Deep Belief Netzwerk(DBN) verwendet, um ein hybrides inhaltsbasiertes Musikempfehlungssystem zu entwickeln. Bisherige inhaltsbasiertes Systeme verfolgen typischerweise einem zweistufigen Ansatz: zunächst extrahieren sie aus Audioinhalte den MFCC Koeffizienten; anschließend prognostizieren sie Musikpräferenzen eines Nutzers. Das nachfolgende Modell führt dieses beiden Schritte simultan und automatisch aus. \cite{wang}\newline
 		Das hybride Modell basiert auf einem hierarchischen linearen Modell mit einem Deep Belief Netzwerk(HLDBN), dass zunächst erläutert wird, um anschließend die Funktionsweise des hybriden Systems darzustellen.
-		
 		\begin{minipage}{0.45\textwidth}
 			\centering
 			\includegraphics{img/hlmdbn.png}
 			\captionof{figure}{Hierarchisches lineares Modell eins Deep Belief Netzwerks \cite{wang}}
 			\label{img:hlmdbn}
 		\end{minipage}
-	
 		\subsubsection{Hierarchisches lineares Modell mit einem Deep Belief Netzwerk}
-		Das in Abbildung \ref{img:hlmdbn} gezeigte Modell ist wie folgt definiert: \textit{f\textsubscript{v}} sind Musikmerkmale eines Liedes \textit{v}, die durch den Eigenvektor x\textsubscript{v} automatisch errechnet werden. Die bevorzugte Musik eines Benutzer \textit{u} wird as Vektor $\beta$\textsubscript{u} bezeichnet. $\Omega$ bezeichnet die Parameter, die das DBNs lernt. Die Bewertung, die \textit{u} einem Lied \textit{v} gibt, ist eine Skalarprodukt von \textit{r\textsubscript{xv}} und $\beta$\textsubscript{u}. Durch $\sigma$\textsubscript{R} wird die Varianz aller Bewertungen des Nutzers betrachtet. $\mu$ repräsentiert den allgemeinen Musikgeschmack aller Benutzer, wobei $\sigma$\textsubscript{u} die Varianz des einzelnen Nutzers definiert. Alle Benutzer und Lieder Paare werden als \textit{I} bezeichnet. Für eine Regularisierung der Werte wird die Gaußsche Normalverteilung $\mathcal{N}$ verwenden.\footnote[14]{$\mathcal{N}$(a,b) ist die Normalverteilung mit Mittelwert a und Varianz b. x $\sim$ p zeigt, dass x die Verteilung p erfüllt} \cite{wang}\newline Das Modell ist wie folgt formuliert:\newline
+		Das in Abbildung \ref{img:hlmdbn} gezeigte Modell ist wie folgt definiert: \textit{f\textsubscript{v}} sind Musikmerkmale eines Liedes \textit{v}, die durch den Merkmalsvektor x\textsubscript{v} automatisch errechnet werden. Die bevorzugte Musik eines Benutzers \textit{u} wird as Vektor $\beta$\textsubscript{u} bezeichnet. $\Omega$ bezeichnet die Parameter, die das DBN lernt. Die Bewertung \textit{r\textsubscript{xv}}, die ein Nutzer einem Lied \textit{v} gibt, ist ein Skalarprodukt von \textit{x\textsubscript{v}} und $\beta$\textsubscript{u}. Durch $\sigma$\textsubscript{R} wird die Varianz aller Bewertungen des Nutzers betrachtet. $\mu$ repräsentiert den allgemeinen Musikgeschmack aller Benutzer, wobei $\sigma$\textsubscript{u} die Varianz des einzelnen Nutzers definiert. Alle Benutzer und Lieder Paare werden als \textit{I} bezeichnet. Für eine Regularisierung der Werte wird die Gaußsche Normalverteilung $\mathcal{N}$ verwenden.\footnote[14]{$\mathcal{N}$(a,b) ist die Normalverteilung mit Mittelwert a und Varianz b. x $\sim$ p zeigt, dass x die Verteilung p erfüllt} \cite{wang}\newline Das Modell ist wie folgt formuliert:\newline
 		\begin{equation*}
 			\centering
 			\textit{r\textsubscript{xv}}\sim\mathcal{N}(\beta'\textit{x\textsubscript{v}},\sigma\textsuperscript{2}\textsubscript{R})
@@ -273,28 +217,38 @@
 		\begin{equation*}
 			\textit{x\textsubscript{v}} = DBN(\textit{f\textsubscript{v}};\Omega)
 		\end{equation*}\newline\\
-		Für das Training des Systems wird im Unterschied zu einem CNN zunächst ein unsupervised\footnote[15]{Ausgabeergebnisse der Testdaten sind nicht vorhanden} Training durchgeführt um die Knoten zu initialisieren. Als Optimierungsmethode wird das stochastische Mini-Batch\footnote[16]{nur ein kleiner Teil der vorhandenen Daten wird trainiert} Verfahren mit Backpropagation genutzt, um ein Overfitting\footnote[17]{Spezialisierung} des Modells zu vermeiden. Nach der Lernphase kann \textit{r\textsubscript{xv}} geschätzt werden, wodurch auch neue Lieder empfohlen werden können. \cite{wang}
-		
+		Für das Training des Systems wird im Unterschied zu einem CNN zunächst ein unsupervised\footnote[15]{Ausgabeergebnisse der Testdaten sind nicht vorhanden} Training durchgeführt um die Knoten zu initialisieren. Anschließend findet ein supervised Training zur Optimierung der Parameter statt. Als Optimierungsmethode wird das stochastische Mini-Batch\footnote[16]{nur ein kleiner Teil der vorhandenen Daten wird trainiert} Verfahren mit Backpropagation genutzt, um ein Overfitting\footnote[17]{Spezialisierung} des Modells zu vermeiden. Nach der Lernphase kann die Bewertung \textit{r\textsubscript{xv}} eines Benutzers \textit{u} über ein Lied \textit{v} geschätzt werden, wodurch diesem neue Lieder empfohlen werden können. \cite{wang}
 		\subsubsection{Hybrides Modell mit einem Deep Belief Netzwerk}
-		
+		Basiert auf dem HLDBM wird das in Abbildung \ref{img:hybrid} gezeigte Modell um einen kollaborative Filter erweitert, um eine noch bessere Empfehlungsrate zu erhalten.
 		\begin{minipage}{0.45\textwidth}
 			\centering
 			\includegraphics{img/hybrid.png}
 			\captionof{figure}{Hybrides Empfehlungs Modell \cite{wang}}
 			\label{img:hybrid}
-		\end{minipage}
-		
+		\end{minipage}\newline\\
+		Die Musikmerkmale eines Liedes \textit{x}\textsubscript{v} und die bevorzugte Musik eines Nutzers $\beta$\textsubscript{u} werden wie in (3.4.1) berechnet. $\gamma$\textsubscript{u} stellt einen Merkmalsvektor eines Benutzers \textit{u}; \textit{y}\textsubscript{v} den Merkmalsvektor eines Liedes \textit{v} dar. $\beta$\textsubscript{u}, $\gamma$\textsubscript{u} und \textit{y}\textsubscript{v} werden durch das Neuronale Netzwerk anhand der Trainingsdaten gelernt. Die Empfehlungsrate \textit{r}\textsubscript{uv} ergibt sich aus der Summe der Skalarmultiplikationen  $\gamma$'\textsubscript{u}\textit{y}\textsubscript{v} und  $\beta$'\textsubscript{u}\textit{x}\textsubscript{v}. Die A-priori-Wahrscheinlichkeit\footnote[18]{Anfangswahrscheinlichkeit} werden durch die folgenden Formeln definiert:\newline
+		\begin{equation*}
+		\centering
+		\textit{r\textsubscript{xv}}|\beta\textsubscript{u},\textit{x}\textsubscript{v},\gamma\textsubscript{u},\textit{y}\textsubscript{v},\sigma\textsubscript{R}\sim\mathcal{N}(\beta'\textsubscript{u}\textit{x}\textsubscript{v} + \gamma'\textsubscript{u}\textit{y}\textsubscript{v},\sigma\textsubscript{R}\textsuperscript{2})
+		\end{equation*}
+		\begin{equation*}
+		\centering
+		\beta\textsubscript{u}|\sigma\textsubscript{$\beta$}\sim\mathcal{N}(\mu,|\sigma\textsubscript{$\beta$}\textsuperscript{2}I)
+		\end{equation*}
+		\begin{equation*}
+		\centering
+		\gamma\textsubscript{u}|\sigma\textsubscript{u}\sim\mathcal{N}(0,|\sigma\textsubscript{$\gamma$}\textsuperscript{2})
+		\end{equation*}
+		\begin{equation*}
+		\centering
+		\textit{y}\textsubscript{v}|\sigma\textsubscript{v}\sim\mathcal{N}(0,|\sigma\textsubscript{y}\textsuperscript{2})
+		\end{equation*}\newline
+		Die Fehler Funktion des Modells wird auch mit Hilfe der Backpropagation minimiert. Alternative können  die Werte für $\gamma$\textsubscript{u} und \textit{y}\textsubscript{v} durch eine PMF berechnet und als Initialwerte verwendet werden.
 		\section{Vergleich der vorgestellten Modelle}
 		Abschließend wird nun ein Vergleich zwischen dem vorgestellten CNN Ansatz einerseits und dem danach folgendem DBN gezogen. In Versuchen \cite{oord} wurde festgestellt das dass CNN Model einem BOW System überlegen ist und eine bessere Empfehlungsrate erreicht. Das anschließend erläuterte  Versuchsmodel, welches mittels DBN einen hybriden Methode verfolgt, konnte im direkten Vergleich zu CNN eine nochmals verbesserte Empfehlungsgenauigkeit erreichen. Vergleichende Versuchsreihen \cite{wang} haben folgendes festgestellt: ein nicht hybrider Ansatz welcher allein auf Training der beiden Netze ergab, dass das vorgestellte HLDBN Modell genauere Ergebnisse lieferte als das vorgestellte CNN. Die integration der beiden Modelle in einen hybriden Aufbau ergab wiederum ebenso dass der Einsatz des HLDBN Netzes zu genaueren Empfehlungsraten führte als die Verknüpfung von CNN und CF. Die Empfehlungsraten für bereits bekannte Lieder, konnten somit im Vergleich zu klassischen Ansätzen verbessert werden. Auch das bereits eingeführte Problem des NSP konnte durch den Einsatz Neuronaler Netze gelöst werden.  Sowohl der Einsatz des CNN als auch der des HLDBN Netzes führen hierbei zum Erfolg.
-		
-		
-		
 		Sowohl der im Punkt 3.2 vorgestellte ansatz mittels eines CNNs sowie der in Punkt 3.3 erläuterte Ansatz mit Einsatz eines hybriden dbn Netzwerkes eine gute Möglichkeit zur automatisierten Musikempfehlung. Beide Verfahren haben in Rahmen von Versuchen bewiesen, dass sie sowohl zuverlässig sind, aber auch das sie einen klassisches Verfahren wie ein BoW-System 
-		
 		%\bibliographystyle{abbrvdin}
 		\bibliographystyle{unsrt}
 		\bibliography{lit}
-		
 	\end{multicols}
-	
 \end{document}
