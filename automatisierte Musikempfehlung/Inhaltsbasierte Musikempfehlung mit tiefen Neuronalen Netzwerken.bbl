@@ -70,17 +70,22 @@ Honglak Lee, Yan Largman, Peter Pham, and Andrew~Y. Ng.
 \newblock {\em Advances in Neural Information Processing Systems}, 2009.
 
 \bibitem{wikipic}
-wikipedia.
+wikipedia, 2017.
+\newblock
+  \url{https://de.wikipedia.org/wiki/Convolutional_Neural_Network#/media/File:3D_Convolution_Animation.gif}.
 
 \bibitem{karpathy}
 Andrej Karpathy.
 \newblock {\em Convolutional Neural Networks for Visual Recognition}.
-\newblock Stanford University.
+\newblock Stanford University, 2017.
+\newblock
+  \url{https://github.com/cs231n/cs231n.github.io/blob/master/convolutional-networks.md#conv}.
 
 \bibitem{goodfellow}
 Ian Goodfellow, Yoshua Bengio, and Aaron Courville.
 \newblock {\em Deep Learning}.
-\newblock MIT Press.
+\newblock MIT Press, 2016.
+\newblock \url{http://www.deeplearningbook.org}.
 
 \bibitem{zhou}
 Zhou Y. and Chellappa R.
