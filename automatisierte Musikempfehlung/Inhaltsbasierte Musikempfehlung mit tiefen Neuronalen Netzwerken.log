@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.16)  21 JAN 2018 14:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.16)  22 JAN 2018 11:20
 entering extended mode
 **"./Inhaltsbasierte Musikempfehlung mit tiefen Neuronalen Netzwerken.tex"
 ("Inhaltsbasierte Musikempfehlung mit tiefen Neuronalen Netzwerken.tex"
@@ -1180,7 +1180,12 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 5.21004pt on input line 117.
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--123
+Underfull \hbox (badness 10000) in paragraph at lines 117--122
+\T1/pplx/m/n/10 (+20) au-to-ma-ti-schen Mu-sik-emp-feh-lungs-dien-sten,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--122
 
  []
 
@@ -1215,6 +1220,11 @@ Package multicol Warning: I moved some lines to the next page.
 Underfull \hbox (badness 10000) in paragraph at lines 147--150
 
  []
+
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 3 might be wrong on input line 152.
+
 
 [3]
 <img/faltung2.png, id=161, 211.54031pt x 186.6975pt>
@@ -1323,7 +1333,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 252--257
  []
 
 [7] [8] [9]
-<img/hlmdbn.png, id=224, 201.75375pt x 160.34906pt>
+<img/hlmdbn.png, id=225, 201.75375pt x 160.34906pt>
 File: img/hlmdbn.png Graphic file (type png)
 <use img/hlmdbn.png>
 Package pdftex.def Info: img/hlmdbn.png  used on input line 321. on input line 
@@ -1347,24 +1357,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 326--327
  []
 
 
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 10 might be wrong on input line 334
+.
+
+[10 <./img/hlmdbn.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 337--339
 
  []
 
-
-Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 10 might be wrong on input line 339
-.
-
-[10 <./img/hlmdbn.png>]
-<img/hybrid.png, id=244, 215.30438pt x 139.27031pt>
+<img/hybrid.png, id=243, 215.30438pt x 139.27031pt>
 File: img/hybrid.png Graphic file (type png)
 <use img/hybrid.png>
 Package pdftex.def Info: img/hybrid.png  used on input line 343. on input line 
 343.
 Package pdftex.def Info: Requested size: 215.30385pt x 139.26996pt on input lin
 e 343.
-
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 344.
@@ -1434,7 +1442,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--83
 \T1/cmtt/m/n/10 io / blob / master / convolutional -[]
  []
 
-
+[12]
 Underfull \hbox (badness 10000) in paragraph at lines 85--89
 []\T1/pplx/m/n/10 (+20) Ian Good-fel-low, Yos-hua Ben-
  []
@@ -1449,18 +1457,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--89
 \T1/pplx/m/it/10 ep Lear-ning\T1/pplx/m/n/10 (+20) .  MIT Press, 2016.
  []
 
-[12])
+)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 372.
  [13]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 372.
-
-("Inhaltsbasierte Musikempfehlung mit tiefen Neuronalen Netzwerken.aux")
+ ("Inhaltsbasierte Musikempfehlung mit tiefen Neuronalen Netzwerken.aux")
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 372.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 372.
 Package rerunfilecheck Info: File `"Inhaltsbasierte Musikempfehlung mit tiefen 
 Neuronalen Netzwerken".out' has not changed.
-(rerunfilecheck)             Checksum: DF3A4540E01B2A6F40631DDE2B60B173;1852.
-
+(rerunfilecheck)             Checksum: 86FC7D3EB5B70F7DE8B2701585A1FA45;1851.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.43996pt have occurred.
@@ -1468,11 +1474,11 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 372.
  ) 
 Here is how much of TeX's memory you used:
- 12339 strings out of 493312
- 183923 string characters out of 3138896
- 315662 words of memory out of 3000000
+ 12340 strings out of 493312
+ 183932 string characters out of 3138896
+ 316662 words of memory out of 3000000
  15266 multiletter control sequences out of 15000+200000
- 89777 words of font info for 345 fonts, out of 3000000 for 9000
+ 89784 words of font info for 346 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,14n,46p,1916b,772s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Markus\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
@@ -1487,9 +1493,9 @@ aming/MiKTeX/2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.
 urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/u
 plri8a.pfb>
 Output written on "Inhaltsbasierte Musikempfehlung mit tiefen Neuronalen Netzwe
-rken.pdf" (13 pages, 271414 bytes).
+rken.pdf" (13 pages, 272271 bytes).
 PDF statistics:
- 363 PDF objects out of 1000 (max. 8388607)
- 77 named destinations out of 1000 (max. 500000)
+ 365 PDF objects out of 1000 (max. 8388607)
+ 78 named destinations out of 1000 (max. 500000)
  65733 words of extra memory for PDF output out of 74296 (max. 10000000)
 
