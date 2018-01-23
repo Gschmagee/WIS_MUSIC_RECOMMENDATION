@@ -1,6 +1,12 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: Inhaltsbasierte Musikempfehlung mit tiefen Neuronalen Netzwerken.aux
 The style file: unsrt.bst
 Database file #1: lit.bib
+I was expecting a `,' or a `}'---line 210 of file lit.bib
+ :  
+ :  pages={320-323},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Warning--empty author and editor in wikipic
 Warning--empty title in wikipic
-(There were 2 warnings)
+Warning--empty year in MillionSongDataset
+(There was 1 error message)
