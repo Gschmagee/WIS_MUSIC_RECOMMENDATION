@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.16)  24 JAN 2018 09:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.16)  28 JAN 2018 17:52
 entering extended mode
 **"./Inhaltsbasierte Musikempfehlung mit tiefen Neuronalen Netzwerken.tex"
 ("Inhaltsbasierte Musikempfehlung mit tiefen Neuronalen Netzwerken.tex"
@@ -1181,221 +1181,221 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 5.21004pt on input line 117.
 
 Underfull \hbox (badness 10000) in paragraph at lines 117--122
-\T1/pplx/m/n/10 (+20) au-to-ma-ti-schen Mu-sik-emp-feh-lungs-dien-sten,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--129
+Underfull \hbox (badness 10000) in paragraph at lines 124--130
 
  []
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 1 might be wrong on input line 129.
+(multicol)                Footnotes on page 1 might be wrong on input line 130.
 
 
 LaTeX Font Info:    Font shape `T1/pplx/m/sl' in size <10> not available
-(Font)              Font shape `T1/pplx/m/it' tried instead on input line 129.
+(Font)              Font shape `T1/pplx/m/it' tried instead on input line 130.
 [1{C:/Users/Markus/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 ]
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <12> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 129.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 130.
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--139
-
- []
-
-
-Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 2 might be wrong on input line 139.
-
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 147--150
+Underfull \hbox (badness 10000) in paragraph at lines 135--137
 
  []
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 3 might be wrong on input line 152.
+(multicol)                Footnotes on page 2 might be wrong on input line 137.
 
 
-[3]
-<img/faltung2.png, id=161, 211.54031pt x 186.6975pt>
+[2] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 146--149
+
+ []
+
+<img/faltung2.png, id=154, 211.54031pt x 186.6975pt>
 File: img/faltung2.png Graphic file (type png)
 <use img/faltung2.png>
-Package pdftex.def Info: img/faltung2.png  used on input line 155. on input lin
-e 155.
+Package pdftex.def Info: img/faltung2.png  used on input line 154. on input lin
+e 154.
 Package pdftex.def Info: Requested size: 211.53978pt x 186.69704pt on input lin
-e 155.
-
+e 154.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 156.
+(caption)                particular \caption on input line 155.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (18.03902pt too wide) in paragraph at lines 155--156
+Overfull \hbox (18.03902pt too wide) in paragraph at lines 154--155
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--159
+Underfull \hbox (badness 10000) in paragraph at lines 152--158
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--162
+Underfull \hbox (badness 10000) in paragraph at lines 159--161
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--162
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
-
- []
-
-<img/pooling.png, id=173, 182.93344pt x 85.82062pt>
-File: img/pooling.png Graphic file (type png)
-<use img/pooling.png>
-Package pdftex.def Info: img/pooling.png  used on input line 173. on input line
- 173.
-Package pdftex.def Info: Requested size: 182.93298pt x 85.82039pt on input line
- 173.
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 174.
-See the caption package documentation for explanation.
-
-
-Overfull \hbox (10.93376pt too wide) in paragraph at lines 173--174
- [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 169--177
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 169--177
+Underfull \hbox (badness 10000) in paragraph at lines 159--161
 
  []
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 4 might be wrong on input line 177.
+(multicol)                Footnotes on page 4 might be wrong on input line 161.
 
 
 [4 <./img/faltung2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 201--201
-|[]\T1/pplx/b/n/10 Musikempfehlung mit Neu-ro-na-len
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
+
  []
 
+<img/pooling.png, id=182, 182.93344pt x 85.82062pt>
+File: img/pooling.png Graphic file (type png)
+<use img/pooling.png>
+Package pdftex.def Info: img/pooling.png  used on input line 172. on input line
+ 172.
+Package pdftex.def Info: Requested size: 182.93298pt x 85.82039pt on input line
+ 172.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 173.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (10.93376pt too wide) in paragraph at lines 172--173
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--176
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--176
+
+ []
+
+[5 <./img/pooling.png>]
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 5 might be wrong on input line 205.
+(multicol)                Footnotes on page 6 might be wrong on input line 210.
 
 
-[5 <./img/pooling.png>] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 216--219
+
+ []
+
+<img/Zielfunktion.png, id=213, 571.38469pt x 94.85437pt>
+File: img/Zielfunktion.png Graphic file (type png)
+<use img/Zielfunktion.png>
+Package pdftex.def Info: img/Zielfunktion.png  used on input line 224. on input
+ line 224.
+Package pdftex.def Info: Requested size: 184.9429pt x 30.70137pt on input line 
+224.
+
+Overfull \hbox (98.9433pt too wide) in paragraph at lines 224--225
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--233
+
+ []
+
+[7 <./img/Zielfunktion.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 235--245
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
+Underfull \hbox (badness 10000) in paragraph at lines 235--245
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--225
-[]\T1/pplx/m/n/10 (+20) pui = I(Rui > 0), Cui = 1 +
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 251--256
+Underfull \hbox (badness 10000) in paragraph at lines 235--245
 
  []
 
-[7] [8] [9]
-<img/hlmdbn.png, id=225, 201.75375pt x 160.34906pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--245
+
+ []
+
+<img/hlmdbn.png, id=229, 201.75375pt x 160.34906pt>
 File: img/hlmdbn.png Graphic file (type png)
 <use img/hlmdbn.png>
-Package pdftex.def Info: img/hlmdbn.png  used on input line 320. on input line 
-320.
+Package pdftex.def Info: img/hlmdbn.png  used on input line 251. on input line 
+251.
 Package pdftex.def Info: Requested size: 201.75325pt x 160.34866pt on input lin
-e 320.
-
+e 251.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 321.
+(caption)                particular \caption on input line 252.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (8.25249pt too wide) in paragraph at lines 320--321
+Overfull \hbox (8.25249pt too wide) in paragraph at lines 251--252
  [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 325--327
-
- []
-
-
-Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 10 might be wrong on input line 334
-.
-
-[10 <./img/hlmdbn.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 337--339
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 256--258
 
  []
 
-<img/hybrid.png, id=242, 215.30438pt x 139.27031pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--270
+
+ []
+
+<img/hybrid.png, id=244, 215.30438pt x 139.27031pt>
 File: img/hybrid.png Graphic file (type png)
 <use img/hybrid.png>
-Package pdftex.def Info: img/hybrid.png  used on input line 343. on input line 
-343.
+Package pdftex.def Info: img/hybrid.png  used on input line 274. on input line 
+274.
 Package pdftex.def Info: Requested size: 215.30385pt x 139.26996pt on input lin
-e 343.
+e 274.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 344.
+(caption)                particular \caption on input line 275.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (21.80309pt too wide) in paragraph at lines 343--344
+Overfull \hbox (21.80309pt too wide) in paragraph at lines 274--275
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 340--348
+Underfull \hbox (badness 10000) in paragraph at lines 271--279
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 340--348
+Underfull \hbox (badness 10000) in paragraph at lines 271--279
 
  []
 
+[9 <./img/hlmdbn.png>]
 ("Inhaltsbasierte Musikempfehlung mit tiefen Neuronalen Netzwerken.bbl"
-[11 <./img/hybrid.png>] [12]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 75.
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 10 might be wrong on input line 1.
+
+[10 <./img/hybrid.png>] [11]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 100.
+
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -1405,81 +1405,69 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--76
-[]\T1/pplx/m/n/10 (+20) wikipedia, 2017.  []$\T1/cmtt/m/n/10 https : / / de .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--76
+Underfull \hbox (badness 10000) in paragraph at lines 97--101
 \T1/cmtt/m/n/10 wikipedia . org / wiki / Convolutional _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--76
+Underfull \hbox (badness 10000) in paragraph at lines 97--101
 \T1/cmtt/m/n/10 Neural _ Network # /media / File :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--83
+Underfull \hbox (badness 10000) in paragraph at lines 103--108
 \T1/pplx/m/n/10 (+20) an-ford Uni-ver-si-ty, 2017.  []$\T1/cmtt/m/n/10 https :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--83
+Underfull \hbox (badness 10000) in paragraph at lines 103--108
 \T1/cmtt/m/n/10 / / github . com / cs231n / cs231n . github .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--83
+Underfull \hbox (badness 10000) in paragraph at lines 103--108
 \T1/cmtt/m/n/10 io / blob / master / convolutional -[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--89
+Underfull \hbox (badness 10000) in paragraph at lines 110--114
 []\T1/pplx/m/n/10 (+20) Ian Good-fel-low, Yos-hua Ben-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--89
+Underfull \hbox (badness 10000) in paragraph at lines 110--114
 \T1/pplx/m/n/10 (+20) gio, and Aaron Cour-ville.  \T1/pplx/m/it/10 De-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--89
+Underfull \hbox (badness 10000) in paragraph at lines 110--114
 \T1/pplx/m/it/10 ep Lear-ning\T1/pplx/m/n/10 (+20) .  MIT Press, 2016.
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 373.
- [13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 373.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 304.
+ [12]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 304.
  ("Inhaltsbasierte Musikempfehlung mit tiefen Neuronalen Netzwerken.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 373.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 373.
-
-Package rerunfilecheck Warning: File `"Inhaltsbasierte Musikempfehlung mit tief
-en Neuronalen Netzwerken".out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `"Inhaltsbasierte Musikempfehlung mi
-t tiefen Neuronalen Netzwerken".out':
-(rerunfilecheck)             Before: 86FC7D3EB5B70F7DE8B2701585A1FA45;1851
-(rerunfilecheck)             After:  ED05F0DA7687B7A8029E42F11F2478CF;1849.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 304.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 304.
+Package rerunfilecheck Info: File `"Inhaltsbasierte Musikempfehlung mit tiefen 
+Neuronalen Netzwerken".out' has not changed.
+(rerunfilecheck)             Checksum: 87A911B73A536C687F763E9F069265C1;1766.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.43996pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 373.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 304.
  ) 
 Here is how much of TeX's memory you used:
- 12341 strings out of 493312
- 183944 string characters out of 3138896
- 318681 words of memory out of 3000000
- 15266 multiletter control sequences out of 15000+200000
- 89784 words of font info for 346 fonts, out of 3000000 for 9000
+ 12372 strings out of 493312
+ 184387 string characters out of 3138896
+ 316835 words of memory out of 3000000
+ 15274 multiletter control sequences out of 15000+200000
+ 90875 words of font info for 362 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,14n,46p,1916b,770s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,15n,46p,1653b,766s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Markus\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
 \ectt1000.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Progr
 am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files
@@ -1492,9 +1480,9 @@ aming/MiKTeX/2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.
 urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/u
 plri8a.pfb>
 Output written on "Inhaltsbasierte Musikempfehlung mit tiefen Neuronalen Netzwe
-rken.pdf" (13 pages, 272977 bytes).
+rken.pdf" (12 pages, 284704 bytes).
 PDF statistics:
- 368 PDF objects out of 1000 (max. 8388607)
- 79 named destinations out of 1000 (max. 500000)
- 65733 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 377 PDF objects out of 1000 (max. 8388607)
+ 81 named destinations out of 1000 (max. 500000)
+ 65730 words of extra memory for PDF output out of 74296 (max. 10000000)
 
